@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Aug 19 10:42:27 2014
+Quartus II 64-Bit Version : 10.0 Build 262 08/18/2010 SP 1 SJ Full Version
+Revision Name : Medipix_prj
+Top-level Entity Name : Top_Medipix
+Family : Cyclone IV E
+Total logic elements : 18,429
+    Total combinational functions : 15,056
+    Dedicated logic registers : 9,982
+Total registers : 10074
+Total pins : 96
+Total virtual pins : 0
+Total memory bits : 1,333,328
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 2

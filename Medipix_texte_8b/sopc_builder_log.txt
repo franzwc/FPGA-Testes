@@ -1,0 +1,53 @@
+#AFI afi generate sequencer: hdl/sequencer/seq/alt_mem_phy_seq alt_mem_phy_seq
+#AFI generate sequencer wrapper: hdl/datapath/common/alt_mem_phy_seq_wrapper ram_phy alt_mem_phy_seq_wrapper
+Date Stamp: Wed Jun 18 12:13:01 BRT 2014
+Entity Name: ram_phy_alt_mem_phy	Vendor: Altera Corporation
+Variation Name: ram_phy	Variation Language: Verilog HDL
+Working Directory: D:\ARQ\Prototipo_Medipix\Projeto\3_Terceira_fase_IMG\Medipix_0
+ALTMEMPHY Returning list of Ports to IPTB
+[pll_ref_clk, global_reset_n, soft_reset_n, reset_request_n, ctl_clk, ctl_reset_n, ctl_dqs_burst[1..0], ctl_wdata_valid[1..0], ctl_wdata[31..0], ctl_dm[3..0], ctl_wlat[4..0], ctl_addr[12..0], ctl_ba[2..0], ctl_cas_n[0..0], ctl_cke[0..0], ctl_cs_n[0..0], ctl_odt[0..0], ctl_ras_n[0..0], ctl_we_n[0..0], ctl_rst_n[0..0], ctl_mem_clk_disable[0..0], ctl_doing_rd[1..0], ctl_rdata[31..0], ctl_rdata_valid[0..0], ctl_rlat[4..0], ctl_cal_req, ctl_cal_byte_lane_sel_n[1..0], ctl_cal_success, ctl_cal_fail, ctl_cal_warning, mem_addr[12..0], mem_ba[2..0], mem_cas_n, mem_cke[0..0], mem_cs_n[0..0], mem_dm[1..0], mem_odt[0..0], mem_ras_n, mem_we_n, mem_reset_n, mem_clk[0..0], mem_clk_n[0..0], mem_dq[15..0], mem_dqs[1..0], mem_dqs_n[1..0], dbg_clk, dbg_reset_n, dbg_addr[12..0], dbg_wr, dbg_rd, dbg_cs, dbg_wr_data[31..0], dbg_rd_data[31..0], dbg_waitrequest, aux_half_rate_clk, aux_full_rate_clk]
+Generating MegaCore function top-level...
+MSG NF-1 Added project file "ram_phy.v" Location = 2
+Generating QIP file ...
+MSG NF-1 Added project file "ram_phy_alt_mem_phy_seq_wrapper.v" Location = 2
+MSG NF-1 Added project file "ram_phy_alt_mem_phy_seq.vhd" Location = 2
+MSG NF-1 Added project file "ram_phy.v" Location = 2
+MSG NF-1 Added project file "ram_phy_alt_mem_phy.v" Location = 2
+MSG NF-1 Added project file "ram_phy_alt_mem_phy_pll.v" Location = 2
+MSG APF-6: Processing ram_phy_alt_mem_phy_seq_wrapper.v
+MSG QIP-2: Adding Verilog file ram_phy_alt_mem_phy_seq_wrapper.v
+MSG APF-6: Processing ram_phy_alt_mem_phy_seq.vhd
+MSG QIP-1: Adding VHDL file ram_phy_alt_mem_phy_seq.vhd
+MSG APF-6: Processing ram_phy.v
+MSG QIP-2: Adding Verilog file ram_phy.v
+MSG APF-6: Processing ram_phy_alt_mem_phy.v
+MSG QIP-2: Adding Verilog file ram_phy_alt_mem_phy.v
+MSG APF-6: Processing ram_phy_alt_mem_phy_pll.v
+MSG QIP-2: Adding Verilog file ram_phy_alt_mem_phy_pll.v
+Adding design files to Quartus II project ...
+MSG BRT-7: Copying quartus.ini to quartus.ini
+MSG NF-1 Added project file "ram_phy_alt_mem_phy_seq_wrapper.v" Location = 2
+MSG NF-1 Added project file "ram_phy_alt_mem_phy_seq.vhd" Location = 2
+MSG NF-1 Added project file "ram_phy.v" Location = 2
+MSG NF-1 Added project file "ram_phy_alt_mem_phy.v" Location = 2
+MSG NF-1 Added project file "ram_phy_alt_mem_phy_pll.v" Location = 2
+MSG APF-8: Processing ram_phy_alt_mem_phy_seq_wrapper.v
+MSG APF-1: Adding Tcl file ram_phy_alt_mem_phy_seq_wrapper.v
+MSG APF-1: Adding Tcl file ram_phy_alt_mem_phy_seq_wrapper.v
+MSG APF-8: Processing ram_phy_alt_mem_phy_seq.vhd
+MSG APF-1: Adding Tcl file ram_phy_alt_mem_phy_seq.vhd
+MSG APF-1: Adding Tcl file ram_phy_alt_mem_phy_seq.vhd
+MSG APF-8: Processing ram_phy.v
+MSG APF-1: Adding Tcl file ram_phy.v
+MSG APF-1: Adding Tcl file ram_phy.v
+MSG APF-8: Processing ram_phy_alt_mem_phy.v
+MSG APF-1: Adding Tcl file ram_phy_alt_mem_phy.v
+MSG APF-1: Adding Tcl file ram_phy_alt_mem_phy.v
+MSG APF-8: Processing ram_phy_alt_mem_phy_pll.v
+MSG APF-1: Adding Tcl file ram_phy_alt_mem_phy_pll.v
+MSG APF-1: Adding Tcl file ram_phy_alt_mem_phy_pll.v
+ALTMEMPHY Returning list of Ports to IPTB
+[pll_ref_clk, global_reset_n, soft_reset_n, reset_request_n, ctl_clk, ctl_reset_n, ctl_dqs_burst[1..0], ctl_wdata_valid[1..0], ctl_wdata[31..0], ctl_dm[3..0], ctl_wlat[4..0], ctl_addr[12..0], ctl_ba[2..0], ctl_cas_n[0..0], ctl_cke[0..0], ctl_cs_n[0..0], ctl_odt[0..0], ctl_ras_n[0..0], ctl_we_n[0..0], ctl_rst_n[0..0], ctl_mem_clk_disable[0..0], ctl_doing_rd[1..0], ctl_rdata[31..0], ctl_rdata_valid[0..0], ctl_rlat[4..0], ctl_cal_req, ctl_cal_byte_lane_sel_n[1..0], ctl_cal_success, ctl_cal_fail, ctl_cal_warning, mem_addr[12..0], mem_ba[2..0], mem_cas_n, mem_cke[0..0], mem_cs_n[0..0], mem_dm[1..0], mem_odt[0..0], mem_ras_n, mem_we_n, mem_reset_n, mem_clk[0..0], mem_clk_n[0..0], mem_dq[15..0], mem_dqs[1..0], mem_dqs_n[1..0], dbg_clk, dbg_reset_n, dbg_addr[12..0], dbg_wr, dbg_rd, dbg_cs, dbg_wr_data[31..0], dbg_rd_data[31..0], dbg_waitrequest, aux_half_rate_clk, aux_full_rate_clk]
+MegaCore Function Generation successful.
+MSG FMP-1: Posting close event for IP Toolbench. Application will exit now with code 4
+MSG FMP-2: Calling windowClosing. Application will exit now with the code 4

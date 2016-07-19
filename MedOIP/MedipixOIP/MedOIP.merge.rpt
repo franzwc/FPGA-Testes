@@ -1,0 +1,506 @@
+Partition Merge report for MedOIP
+Wed Apr 23 16:38:37 2014
+Quartus II 64-Bit Version 10.0 Build 262 08/18/2010 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Connections to In-System Debugging Instance "auto_signaltap_0"
+  4. Partition Merge Netlist Types Used
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Partition Pin Processing
+  7. Partition Merge Resource Usage Summary
+  8. Partition Merge RAM Summary
+  9. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------+
+; Partition Merge Summary                                                             ;
++------------------------------------+------------------------------------------------+
+; Partition Merge Status             ; Successful - Wed Apr 23 16:38:37 2014          ;
+; Quartus II 64-Bit Version          ; 10.0 Build 262 08/18/2010 SP 1 SJ Full Version ;
+; Revision Name                      ; MedOIP                                         ;
+; Top-level Entity Name              ; Top_MedOIP                                     ;
+; Family                             ; Cyclone IV E                                   ;
+; Total logic elements               ; 2,707 / 75,408 ( 4 % )                         ;
+;     Total combinational functions  ; 1,896 / 75,408 ( 3 % )                         ;
+;     Dedicated logic registers      ; 1,691 / 75,408 ( 2 % )                         ;
+; Total registers                    ; 1691                                           ;
+; Total pins                         ; 20 / 293 ( 7 % )                               ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 129,616 / 2,810,880 ( 5 % )                    ;
+; Embedded Multiplier 9-bit elements ; 0 / 400 ( 0 % )                                ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                 ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                           ;
++-------------------------------------------------------------+---------------+-----------+-----------------------+-------------------+------------------------------------------------------------------------------------------+---------+
+; Name                                                        ; Type          ; Status    ; Partition Name        ; Netlist Type Used ; Actual Connection                                                                        ; Details ;
++-------------------------------------------------------------+---------------+-----------+-----------------------+-------------------+------------------------------------------------------------------------------------------+---------+
+; Eth_TxCtl                                                   ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|out_PhyTxEna                           ; N/A     ;
+; Eth_TxCtl                                                   ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|out_PhyTxEna                           ; N/A     ;
+; Eth_Txd[0]                                                  ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|out_PhyTxData[0]                       ; N/A     ;
+; Eth_Txd[0]                                                  ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|out_PhyTxData[0]                       ; N/A     ;
+; Eth_Txd[1]                                                  ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|out_PhyTxData[1]                       ; N/A     ;
+; Eth_Txd[1]                                                  ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|out_PhyTxData[1]                       ; N/A     ;
+; Eth_Txd[2]                                                  ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|out_PhyTxData[2]                       ; N/A     ;
+; Eth_Txd[2]                                                  ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|out_PhyTxData[2]                       ; N/A     ;
+; Eth_Txd[3]                                                  ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|out_PhyTxData[3]                       ; N/A     ;
+; Eth_Txd[3]                                                  ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|out_PhyTxData[3]                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_BtsComp     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|BTS_comp                                                           ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_BtsComp     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|BTS_comp                                                           ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[0]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[0]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[0]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[0]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[10]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[10]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[10]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[10]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[11]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[11]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[11]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[11]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[12]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[12]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[12]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[12]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[13]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[13]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[13]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[13]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[14]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[14]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[14]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[14]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[15]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[15]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[15]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[15]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[16]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[16]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[16]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[16]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[17]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[17]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[17]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[17]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[18]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[18]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[18]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[18]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[19]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[19]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[19]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[19]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[1]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[1]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[1]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[1]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[20]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[20]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[20]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[20]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[21]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[21]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[21]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[21]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[22]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[22]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[22]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[22]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[23]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[23]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[23]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[23]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[24]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[24]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[24]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[24]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[25]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[25]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[25]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[25]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[26]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[26]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[26]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[26]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[27]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[27]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[27]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[27]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[28]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[28]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[28]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[28]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[29]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[29]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[29]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[29]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[2]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[2]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[2]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[2]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[30]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[30]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[30]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[30]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[31]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[31]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[31]  ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[31]                                                       ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[3]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[3]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[3]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[3]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[4]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[4]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[4]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[4]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[5]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[5]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[5]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[5]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[6]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[6]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[6]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[6]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[7]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[7]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[7]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[7]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[8]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[8]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[8]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[8]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[9]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[9]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[9]   ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|i_IpDest[9]                                                        ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[0]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[0]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[0]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[0]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[1]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[1]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[1]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[1]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[2]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[2]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[2]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[2]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[3]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[3]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[3]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[3]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[4]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[4]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[4]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[4]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[5]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[5]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[5]      ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[5]                                   ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[0]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[0]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[0]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[0]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[1]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[1]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[1]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[1]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[2]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[2]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[2]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[2]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[3]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[3]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[3]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[3]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[4]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[4]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[4]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[4]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[5]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[5]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[5]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[5]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[6]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[6]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[6]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[6]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[7]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[7]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[7]     ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[7]                                  ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_HeaderReady ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_HeaderReady                              ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_HeaderReady ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_HeaderReady                              ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Valid       ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Valid                                    ; N/A     ;
+; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Valid       ; pre-synthesis ; connected ; TOP_TSoIP:u_TOP_TSoIP ; post-synthesis    ; TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Valid                                    ; N/A     ;
+; Top_pll:u_Top_pll|c0                                        ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; Top_pll:u_Top_pll|altpll:altpll_component|Top_pll_altpll:auto_generated|wire_pll1_clk[0] ; N/A     ;
+; reset:u_reset|o_reset                                       ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; reset:u_reset|o_reset                                                                    ; N/A     ;
+; reset:u_reset|o_reset                                       ; pre-synthesis ; connected ; Top                   ; post-synthesis    ; reset:u_reset|o_reset                                                                    ; N/A     ;
++-------------------------------------------------------------+---------------+-----------+-----------------------+-------------------+------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Source File            ;                                ;
+; TOP_TSoIP:u_TOP_TSoIP          ; User-created   ; Post-Synthesis    ; Post-Synthesis         ; TOP_TSoIP:u_TOP_TSoIP          ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                                                                  ;
++---------------------------------------------+-----------------------+-----------------------+-----------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top                   ; TOP_TSoIP:u_TOP_TSoIP ; sld_hub:auto_hub      ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+-----------------------+-----------------------+-----------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 196 / 75408 ( < 1 % ) ; 1289 / 75408 ( 1 % )  ; 111 / 75408 ( < 1 % ) ; 1113 / 75408 ( 1 % )           ; 0 / 75408 ( 0 % )              ;
+;                                             ;                       ;                       ;                       ;                                ;                                ;
+; Total combinational functions               ; 196                   ; 1161                  ; 101                   ; 438                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;                       ;                       ;                       ;                                ;                                ;
+;     -- 4 input functions                    ; 75                    ; 555                   ; 37                    ; 223                            ; 0                              ;
+;     -- 3 input functions                    ; 20                    ; 425                   ; 44                    ; 115                            ; 0                              ;
+;     -- <=2 input functions                  ; 101                   ; 181                   ; 20                    ; 100                            ; 0                              ;
+;                                             ;                       ;                       ;                       ;                                ;                                ;
+; Logic elements by mode                      ;                       ;                       ;                       ;                                ;                                ;
+;     -- normal mode                          ; 105                   ; 962                   ; 97                    ; 385                            ; 0                              ;
+;     -- arithmetic mode                      ; 91                    ; 199                   ; 4                     ; 53                             ; 0                              ;
+;                                             ;                       ;                       ;                       ;                                ;                                ;
+; Total registers                             ; 108                   ; 561                   ; 73                    ; 949                            ; 0                              ;
+;     -- Dedicated logic registers            ; 108 / 75408 ( < 1 % ) ; 561 / 75408 ( < 1 % ) ; 73 / 75408 ( < 1 % )  ; 949 / 75408 ( 1 % )            ; 0 / 75408 ( 0 % )              ;
+;     -- I/O registers                        ; 0                     ; 0                     ; 0                     ; 0                              ; 0                              ;
+;                                             ;                       ;                       ;                       ;                                ;                                ;
+; Virtual pins                                ; 0                     ; 0                     ; 0                     ; 0                              ; 0                              ;
+; I/O pins                                    ; 20                    ; 0                     ; 0                     ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 400 ( 0 % )       ; 0 / 400 ( 0 % )       ; 0 / 400 ( 0 % )       ; 0 / 400 ( 0 % )                ; 0 / 400 ( 0 % )                ;
+; Total memory bits                           ; 0                     ; 16976                 ; 0                     ; 112640                         ; 0                              ;
+; Total RAM block bits                        ; 0                     ; 0                     ; 0                     ; 0                              ; 0                              ;
+; JTAG                                        ; 1 / 1 ( 100 % )       ; 0 / 1 ( 0 % )         ; 0 / 1 ( 0 % )         ; 0 / 1 ( 0 % )                  ; 0 / 1 ( 0 % )                  ;
+; PLL                                         ; 0 / 4 ( 0 % )         ; 0 / 4 ( 0 % )         ; 0 / 4 ( 0 % )         ; 0 / 4 ( 0 % )                  ; 1 / 4 ( 25 % )                 ;
+;                                             ;                       ;                       ;                       ;                                ;                                ;
+; Connections                                 ;                       ;                       ;                       ;                                ;                                ;
+;     -- Input Connections                    ; 116                   ; 1385                  ; 111                   ; 1335                           ; 1                              ;
+;     -- Registered Input Connections         ; 108                   ; 599                   ; 82                    ; 1084                           ; 0                              ;
+;     -- Output Connections                   ; 1383                  ; 47                    ; 171                   ; 1                              ; 1346                           ;
+;     -- Registered Output Connections        ; 16                    ; 47                    ; 170                   ; 0                              ; 0                              ;
+;                                             ;                       ;                       ;                       ;                                ;                                ;
+; Internal Connections                        ;                       ;                       ;                       ;                                ;                                ;
+;     -- Total Connections                    ; 2258                  ; 6186                  ; 728                   ; 5624                           ; 1348                           ;
+;     -- Registered Connections               ; 347                   ; 2920                  ; 554                   ; 4224                           ; 0                              ;
+;                                             ;                       ;                       ;                       ;                                ;                                ;
+; External Connections                        ;                       ;                       ;                       ;                                ;                                ;
+;     -- Top                                  ; 2                     ; 792                   ; 103                   ; 492                            ; 110                            ;
+;     -- TOP_TSoIP:u_TOP_TSoIP                ; 792                   ; 0                     ; 0                     ; 42                             ; 598                            ;
+;     -- sld_hub:auto_hub                     ; 103                   ; 0                     ; 16                    ; 163                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 492                   ; 42                    ; 163                   ; 0                              ; 639                            ;
+;     -- hard_block:auto_generated_inst       ; 110                   ; 598                   ; 0                     ; 639                            ; 0                              ;
+;                                             ;                       ;                       ;                       ;                                ;                                ;
+; Partition Interface                         ;                       ;                       ;                       ;                                ;                                ;
+;     -- Input Ports                          ; 11                    ; 233                   ; 18                    ; 167                            ; 1                              ;
+;     -- Output Ports                         ; 14                    ; 54                    ; 36                    ; 120                            ; 110                            ;
+;     -- Bidir Ports                          ; 1                     ; 0                     ; 0                     ; 0                              ; 0                              ;
+;                                             ;                       ;                       ;                       ;                                ;                                ;
+; Registered Ports                            ;                       ;                       ;                       ;                                ;                                ;
+;     -- Registered Input Ports               ; 0                     ; 3                     ; 4                     ; 115                            ; 0                              ;
+;     -- Registered Output Ports              ; 0                     ; 21                    ; 26                    ; 1                              ; 0                              ;
+;                                             ;                       ;                       ;                       ;                                ;                                ;
+; Port Connectivity                           ;                       ;                       ;                       ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0                     ; 151                   ; 1                     ; 0                              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                     ; 0                     ; 0                     ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                     ; 70                    ; 0                     ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                     ; 0                     ; 0                     ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0                     ; 0                     ; 0                     ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0                     ; 0                     ; 0                     ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                     ; 0                     ; 1                     ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                     ; 49                    ; 14                    ; 111                            ; 0                              ;
++---------------------------------------------+-----------------------+-----------------------+-----------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                                                  ;
++-------------------------------------------+-----------------------+---------------+----------+--------------------------------------------+
+; Name                                      ; Partition             ; Type          ; Location ; Status                                     ;
++-------------------------------------------+-----------------------+---------------+----------+--------------------------------------------+
+; Clk125                                    ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- Clk125                             ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- Clk125~input                       ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Clk25                                     ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- Clk25                              ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- Clk25~input                        ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Mdc                                   ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Eth_Mdc                            ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Eth_Mdc~output                     ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Mdio                                  ; Top                   ; Bidir Port    ; n/a      ;                                            ;
+;     -- Eth_Mdio                           ; Top                   ; Bidir Pad     ; Unplaced ; Synthesized                                ;
+;     -- Eth_Mdio~output                    ; Top                   ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Rst_N                                 ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Eth_Rst_N                          ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Eth_Rst_N~output                   ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_RxCtl                                 ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- Eth_RxCtl                          ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- Eth_RxCtl~input                    ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Rxc                                   ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- Eth_Rxc                            ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- Eth_Rxc~input                      ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Rxd[0]                                ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- Eth_Rxd[0]                         ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- Eth_Rxd[0]~input                   ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Rxd[1]                                ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- Eth_Rxd[1]                         ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- Eth_Rxd[1]~input                   ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Rxd[2]                                ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- Eth_Rxd[2]                         ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- Eth_Rxd[2]~input                   ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Rxd[3]                                ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- Eth_Rxd[3]                         ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- Eth_Rxd[3]~input                   ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_TxCtl                                 ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Eth_TxCtl                          ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Eth_TxCtl~output                   ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;     -- TOP_TSoIP:u_TOP_TSoIP|PhytxEna     ; TOP_TSoIP:u_TOP_TSoIP ; Output Port   ; n/a      ;                                            ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Txc                                   ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Eth_Txc                            ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Eth_Txc~output                     ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Txd[0]                                ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Eth_Txd[0]                         ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Eth_Txd[0]~output                  ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;     -- TOP_TSoIP:u_TOP_TSoIP|PhytxData[0] ; TOP_TSoIP:u_TOP_TSoIP ; Output Port   ; n/a      ;                                            ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Txd[1]                                ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Eth_Txd[1]                         ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Eth_Txd[1]~output                  ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;     -- TOP_TSoIP:u_TOP_TSoIP|PhytxData[1] ; TOP_TSoIP:u_TOP_TSoIP ; Output Port   ; n/a      ;                                            ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Txd[2]                                ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Eth_Txd[2]                         ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Eth_Txd[2]~output                  ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;     -- TOP_TSoIP:u_TOP_TSoIP|PhytxData[2] ; TOP_TSoIP:u_TOP_TSoIP ; Output Port   ; n/a      ;                                            ;
+;                                           ;                       ;               ;          ;                                            ;
+; Eth_Txd[3]                                ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Eth_Txd[3]                         ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Eth_Txd[3]~output                  ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;     -- TOP_TSoIP:u_TOP_TSoIP|PhytxData[3] ; TOP_TSoIP:u_TOP_TSoIP ; Output Port   ; n/a      ;                                            ;
+;                                           ;                       ;               ;          ;                                            ;
+; Led_N[0]                                  ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Led_N[0]                           ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Led_N[0]~output                    ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Led_N[1]                                  ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Led_N[1]                           ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Led_N[1]~output                    ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; Led_N[2]                                  ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- Led_N[2]                           ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- Led_N[2]~output                    ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; altera_reserved_tck                       ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- altera_reserved_tck                ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- altera_reserved_tck~input          ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; altera_reserved_tdi                       ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- altera_reserved_tdi                ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- altera_reserved_tdi~input          ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; altera_reserved_tdo                       ; Top                   ; Output Port   ; n/a      ;                                            ;
+;     -- altera_reserved_tdo                ; Top                   ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- altera_reserved_tdo~output         ; Top                   ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; altera_reserved_tms                       ; Top                   ; Input Port    ; n/a      ;                                            ;
+;     -- altera_reserved_tms                ; Top                   ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- altera_reserved_tms~input          ; Top                   ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                           ;                       ;               ;          ;                                            ;
+; pre_syn.bp.u_Top_pll_c0                   ; Top                   ; Output Port   ; n/a      ;                                            ;
+;                                           ;                       ;               ;          ;                                            ;
+; pre_syn.bp.u_reset_o_reset                ; Top                   ; Output Port   ; n/a      ;                                            ;
+;                                           ;                       ;               ;          ;                                            ;
++-------------------------------------------+-----------------------+---------------+----------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                                                                                 ;
++---------------------------------------------+------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                    ;
++---------------------------------------------+------------------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 2,707 / 75,408 ( 3 % )                                                                   ;
+;                                             ;                                                                                          ;
+; Total combinational functions               ; 1896                                                                                     ;
+; Logic element usage by number of LUT inputs ;                                                                                          ;
+;     -- 4 input functions                    ; 890                                                                                      ;
+;     -- 3 input functions                    ; 604                                                                                      ;
+;     -- <=2 input functions                  ; 402                                                                                      ;
+;                                             ;                                                                                          ;
+; Logic elements by mode                      ;                                                                                          ;
+;     -- normal mode                          ; 1549                                                                                     ;
+;     -- arithmetic mode                      ; 347                                                                                      ;
+;                                             ;                                                                                          ;
+; Total registers                             ; 1691                                                                                     ;
+;     -- Dedicated logic registers            ; 1691                                                                                     ;
+;     -- I/O registers                        ; 0                                                                                        ;
+;                                             ;                                                                                          ;
+; I/O pins                                    ; 20                                                                                       ;
+; Total memory bits                           ; 129616                                                                                   ;
+; Total PLLs                                  ; 1                                                                                        ;
+;     -- PLLs                                 ; 1                                                                                        ;
+;                                             ;                                                                                          ;
+; Maximum fan-out node                        ; Top_pll:u_Top_pll|altpll:altpll_component|Top_pll_altpll:auto_generated|wire_pll1_clk[0] ;
+; Maximum fan-out                             ; 1331                                                                                     ;
+; Total fan-out                               ; 12926                                                                                    ;
+; Average fan-out                             ; 3.48                                                                                     ;
++---------------------------------------------+------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                              ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+--------------------------+
+; Name                                                                                                                                                           ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                      ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+--------------------------+
+; TOP_TSoIP:u_TOP_TSoIP|IPRamHeadermac:u_IpRamHeadermac|altsyncram:altsyncram_component|altsyncram_ilq1:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; Memory_IpUdp_1Pct_V1.mif ;
+; TOP_TSoIP:u_TOP_TSoIP|IpFifoTsOIp:u_IpFifoTsOIp|dcfifo:dcfifo_component|dcfifo_4oj1:auto_generated|altsyncram_ij31:fifo_ram|ALTSYNCRAM                         ; AUTO ; Simple Dual Port ; 2048         ; 8            ; 2048         ; 8            ; 16384  ; None                     ;
+; TOP_TSoIP:u_TOP_TSoIP|mux_crc:u_mux_crc|altshift_taps:o_Data_rtl_0|shift_taps_ikm:auto_generated|altsyncram_82b1:altsyncram2|ALTSYNCRAM                        ; AUTO ; Simple Dual Port ; 16           ; 5            ; 16           ; 5            ; 80     ; None                     ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_da04:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 2048         ; 55           ; 2048         ; 55           ; 112640 ; None                     ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+--------------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 10.0 Build 262 08/18/2010 Service Pack 1 SJ Full Version
+    Info: Processing started: Wed Apr 23 16:38:35 2014
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off MedOIP -c MedOIP --merge=on
+Info: Using synthesis netlist for partition "Top"
+Info: Using synthesis netlist for partition "TOP_TSoIP:u_TOP_TSoIP"
+Info: Using synthesis netlist for partition "sld_hub:auto_hub"
+Info: Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info: Succesfully connected in-system debug instance "auto_signaltap_0" to all 111 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info: Resolved and merged 4 partition(s)
+Warning: Found partition port(s) not driving logic, possibly wasting area
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_9_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_8_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_7_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_6_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_5_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_4_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_3_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_2_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_28_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_27_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_26_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_25_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_24_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_23_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_22_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_21_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_20_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_1_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_19_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_18_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_17_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_16_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_15_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_14_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_13_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_12_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_11_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_10_", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_BtsComp", driven by node "~GND", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_31_", driven by node "~VCC", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_30_", driven by node "~VCC", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_29_", driven by node "~VCC", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_i_IPDest_0_", driven by node "~VCC", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Add_1_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[1]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Add_2_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[2]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Data_4_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[4]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Data_5_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[5]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Data_6_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[6]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Data_7_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[7]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Add_0_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[0]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Add_3_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[3]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Add_4_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[4]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Add_5_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[5]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Data_0_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[0]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Data_1_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[1]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Data_2_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[2]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Data_3_", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[3]", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_HeaderReady", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_HeaderReady", does not drive logic
+    Warning: Partition port "TOP_TSoIP:u_TOP_TSoIP|pre_syn.bp.u_mac_header_o_Valid", driven by node "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Valid", does not drive logic
+Warning: PLL "Top_pll:u_Top_pll|altpll:altpll_component|Top_pll_altpll:auto_generated|pll1" has parameters clk1_multiply_by and clk1_divide_by specified but port CLK[1] is not connected
+Info: Generating hard_block partition "hard_block:auto_generated_inst"
+    Info: Adding node "Top_pll:u_Top_pll|altpll:altpll_component|Top_pll_altpll:auto_generated|pll1"
+Warning: Design contains 7 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Clk125"
+    Warning (15610): No output dependent on input pin "Eth_Rxc"
+    Warning (15610): No output dependent on input pin "Eth_RxCtl"
+    Warning (15610): No output dependent on input pin "Eth_Rxd[0]"
+    Warning (15610): No output dependent on input pin "Eth_Rxd[1]"
+    Warning (15610): No output dependent on input pin "Eth_Rxd[2]"
+    Warning (15610): No output dependent on input pin "Eth_Rxd[3]"
+Info: Implemented 3079 device resources after synthesis - the final resource count might be different
+    Info: Implemented 11 input pins
+    Info: Implemented 12 output pins
+    Info: Implemented 1 bidirectional pins
+    Info: Implemented 2977 logic cells
+    Info: Implemented 76 RAM segments
+    Info: Implemented 1 PLLs
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 59 warnings
+    Info: Peak virtual memory: 357 megabytes
+    Info: Processing ended: Wed Apr 23 16:38:37 2014
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Apr 23 17:46:49 2014
+Quartus II 64-Bit Version : 10.0 Build 262 08/18/2010 SP 1 SJ Full Version
+Revision Name : MedOIP
+Top-level Entity Name : Top_MedOIP
+Family : Cyclone IV E
+Device : EP4CE75F23C8
+Timing Models : Final
+Total logic elements : 928 / 75,408 ( 1 % )
+    Total combinational functions : 569 / 75,408 ( < 1 % )
+    Dedicated logic registers : 768 / 75,408 ( 1 % )
+Total registers : 768
+Total pins : 20 / 293 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 217,088 / 2,810,880 ( 8 % )
+Embedded Multiplier 9-bit elements : 0 / 400 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

@@ -1,0 +1,1325 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_mimic'
+Slack : 0.545
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.410
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDQSS'
+Slack : 1.595
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDQSS'
+Slack : 1.664
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1.677
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.905
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_capture'
+Slack : 1.970
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDSS'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDSS'
+Slack : 2.139
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 3.085
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 3.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_fall'
+Slack : 4.649
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_fall'
+Slack : 4.718
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 4.995
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 28.229
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Eth_Rxc'
+Slack : 29.566
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
+Slack : 41.967
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 90.221
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.037
+TNS   : -0.080
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.239
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Eth_Rxc'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.673
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_capture'
+Slack : 1.426
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_fall'
+Slack : 1.555
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_fall'
+Slack : 1.626
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_mimic'
+Slack : 1.630
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDQSS'
+Slack : 1.631
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDQSS'
+Slack : 1.702
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDSS'
+Slack : 1.957
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDSS'
+Slack : 2.028
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 2.165
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.620
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.996
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 5.844
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 6.290
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 13.821
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 47.603
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.093
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1.159
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 1.333
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 1.346
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 1.371
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.585
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 3.662
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.671
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 3.679
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_10'
+Slack : 3.679
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_11'
+Slack : 3.679
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_12'
+Slack : 3.679
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_13'
+Slack : 3.679
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_14'
+Slack : 3.679
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_15'
+Slack : 3.679
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_16'
+Slack : 3.679
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_9'
+Slack : 3.680
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.681
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 3.682
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_2'
+Slack : 3.683
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_3'
+Slack : 3.683
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_7'
+Slack : 3.683
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_1'
+Slack : 3.684
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_4'
+Slack : 3.684
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_5'
+Slack : 3.684
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_6'
+Slack : 3.684
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_8'
+Slack : 3.685
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_capture'
+Slack : 3.731
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_mimic'
+Slack : 3.731
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_26'
+Slack : 3.739
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_27'
+Slack : 3.739
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_28'
+Slack : 3.739
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_29'
+Slack : 3.739
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_30'
+Slack : 3.739
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_31'
+Slack : 3.739
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_32'
+Slack : 3.739
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_25'
+Slack : 3.740
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_18'
+Slack : 3.743
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_19'
+Slack : 3.743
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_23'
+Slack : 3.743
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_17'
+Slack : 3.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_20'
+Slack : 3.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_21'
+Slack : 3.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_22'
+Slack : 3.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_24'
+Slack : 3.745
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk125'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_Ddr2_Clk_P_mimic_launch_clock'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_fall'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_rise'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDQSS'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDSS'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_fall'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_rise'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDQSS'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDSS'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 6.820
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.553
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk_in_Mdpx'
+Slack : 12.875
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk_out_Mdpx'
+Slack : 12.875
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Eth_Rxc'
+Slack : 19.577
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.646
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk25'
+Slack : 19.803
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.637
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 49.674
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_mimic'
+Slack : 0.516
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDQSS'
+Slack : 1.633
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDQSS'
+Slack : 1.681
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1.884
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_capture'
+Slack : 1.937
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDSS'
+Slack : 2.096
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDSS'
+Slack : 2.144
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.262
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 3.188
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 3.565
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.103
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_fall'
+Slack : 4.813
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_fall'
+Slack : 4.861
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 5.192
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 28.980
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Eth_Rxc'
+Slack : 30.024
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 42.570
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 91.126
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.046
+TNS   : -0.109
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.196
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.226
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Eth_Rxc'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.620
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_capture'
+Slack : 1.369
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_fall'
+Slack : 1.500
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_fall'
+Slack : 1.553
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDQSS'
+Slack : 1.655
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_mimic'
+Slack : 1.686
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDQSS'
+Slack : 1.708
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDSS'
+Slack : 1.994
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDSS'
+Slack : 2.047
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 2.616
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.061
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.240
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 5.983
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 6.463
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 13.954
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 47.942
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.001
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1.064
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 1.190
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 1.213
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 1.227
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.094
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 3.643
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.680
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.687
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 3.687
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 3.687
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_14'
+Slack : 3.688
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_9'
+Slack : 3.688
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_10'
+Slack : 3.689
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_11'
+Slack : 3.689
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_12'
+Slack : 3.689
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_13'
+Slack : 3.689
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_15'
+Slack : 3.689
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_16'
+Slack : 3.689
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_8'
+Slack : 3.690
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_1'
+Slack : 3.691
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_2'
+Slack : 3.691
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_3'
+Slack : 3.691
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_4'
+Slack : 3.691
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_5'
+Slack : 3.691
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_7'
+Slack : 3.691
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_6'
+Slack : 3.692
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_capture'
+Slack : 3.730
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_mimic'
+Slack : 3.730
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_25'
+Slack : 3.734
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_30'
+Slack : 3.734
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_26'
+Slack : 3.735
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_27'
+Slack : 3.735
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_28'
+Slack : 3.735
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_29'
+Slack : 3.735
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_31'
+Slack : 3.735
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_32'
+Slack : 3.735
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_24'
+Slack : 3.736
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_17'
+Slack : 3.737
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_18'
+Slack : 3.737
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_19'
+Slack : 3.737
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_20'
+Slack : 3.737
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_21'
+Slack : 3.737
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_23'
+Slack : 3.737
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_22'
+Slack : 3.738
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk125'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_Ddr2_Clk_P_mimic_launch_clock'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_fall'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_rise'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDQSS'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDSS'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_fall'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_rise'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDQSS'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDSS'
+Slack : 4.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 6.723
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.589
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk_in_Mdpx'
+Slack : 12.875
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk_out_Mdpx'
+Slack : 12.875
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Eth_Rxc'
+Slack : 19.588
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.634
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk25'
+Slack : 19.807
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.432
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 49.681
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_mimic'
+Slack : 1.519
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDQSS'
+Slack : 1.775
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDQSS'
+Slack : 1.779
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDSS'
+Slack : 2.175
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDSS'
+Slack : 2.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_capture'
+Slack : 2.993
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 3.551
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.797
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 5.100
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_fall'
+Slack : 5.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_fall'
+Slack : 5.205
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 5.385
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 6.092
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6.404
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 6.665
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 35.096
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Eth_Rxc'
+Slack : 35.335
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 46.731
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 95.692
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.030
+TNS   : -0.075
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.071
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.083
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Eth_Rxc'
+Slack : 0.099
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.106
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_capture'
+Slack : 0.738
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_mimic'
+Slack : 0.776
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_fall'
+Slack : 1.376
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_fall'
+Slack : 1.380
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDQSS'
+Slack : 1.738
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDQSS'
+Slack : 1.742
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDSS'
+Slack : 2.138
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDSS'
+Slack : 2.142
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 4.862
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 5.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 5.407
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 7.032
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 7.224
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 15.021
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 49.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.479
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.540
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.540
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.542
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.645
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1.001
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 3.751
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 3.752
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.757
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_17'
+Slack : 3.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_20'
+Slack : 3.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_21'
+Slack : 3.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_18'
+Slack : 3.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_19'
+Slack : 3.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_22'
+Slack : 3.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_23'
+Slack : 3.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_24'
+Slack : 3.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_28'
+Slack : 3.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_29'
+Slack : 3.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_31'
+Slack : 3.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_32'
+Slack : 3.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_26'
+Slack : 3.775
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_27'
+Slack : 3.775
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_30'
+Slack : 3.775
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_25'
+Slack : 3.776
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_capture'
+Slack : 3.778
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ddr_mimic'
+Slack : 3.778
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_9'
+Slack : 3.780
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_10'
+Slack : 3.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_11'
+Slack : 3.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_14'
+Slack : 3.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_12'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_13'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_15'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_16'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_2'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_3'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_6'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_7'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_8'
+Slack : 3.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_1'
+Slack : 3.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_4'
+Slack : 3.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_dq_5'
+Slack : 3.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk125'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_Ddr2_Clk_P_mimic_launch_clock'
+Slack : 4.667
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_fall'
+Slack : 4.667
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_ac_rise'
+Slack : 4.667
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDQSS'
+Slack : 4.667
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_n_Ddr2_Clk_N_tDSS'
+Slack : 4.667
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_fall'
+Slack : 4.667
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_ac_rise'
+Slack : 4.667
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDQSS'
+Slack : 4.667
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_ck_p_Ddr2_Clk_P_tDSS'
+Slack : 4.667
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 6.888
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst|ram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.747
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk_out_Mdpx'
+Slack : 13.620
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk_in_Mdpx'
+Slack : 13.717
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Eth_Rxc'
+Slack : 19.679
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.759
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk25'
+Slack : 19.951
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.430
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_cpu_pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 49.757
+TNS   : 0.000
+
+------------------------------------------------------------

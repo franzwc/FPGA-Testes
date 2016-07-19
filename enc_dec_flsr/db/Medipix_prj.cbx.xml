@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Medipix_prj">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|cpu_pll:u_cpu_pll|altpll:altpll_component" CBX_FILE_NAME="cpu_pll_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,25 @@
+#Core: ram_phy - Instance: u_Medipix_sopc|the_ram|ram_controller_phy_inst|ram_phy_inst
+#Path, Setup Margin, Hold Margin
+"Address Command (Slow 1200mV 85C Model)",4.650,1.555
+"DQS vs CK (Slow 1200mV 85C Model)",1.595,1.630
+"Mimic (Slow 1200mV 85C Model)",0.545,
+"Phy (Slow 1200mV 85C Model)",0.545,0.367
+"Phy Reset (Slow 1200mV 85C Model)",3.716,1.118
+"Read Capture (Slow 1200mV 85C Model)",0.635,0.650
+"Write (Slow 1200mV 85C Model)",1.070,0.727
+ 
+"Address Command (Slow 1200mV 0C Model)",4.813,1.500
+"DQS vs CK (Slow 1200mV 0C Model)",1.633,1.655
+"Mimic (Slow 1200mV 0C Model)",0.516,
+"Phy (Slow 1200mV 0C Model)",0.516,0.353
+"Phy Reset (Slow 1200mV 0C Model)",4.057,1.022
+"Read Capture (Slow 1200mV 0C Model)",0.595,0.610
+"Write (Slow 1200mV 0C Model)",1.084,0.751
+ 
+"Address Command (Fast 1200mV 0C Model)",5.200,1.376
+"DQS vs CK (Fast 1200mV 0C Model)",1.775,1.738
+"Mimic (Fast 1200mV 0C Model)",1.519,
+"Phy (Fast 1200mV 0C Model)",1.519,0.116
+"Phy Reset (Fast 1200mV 0C Model)",4.862,0.462
+"Read Capture (Fast 1200mV 0C Model)",0.819,0.834
+"Write (Fast 1200mV 0C Model)",1.154,0.818

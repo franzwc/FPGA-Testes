@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Apr 23 17:46:35 2014
+Quartus II 64-Bit Version : 10.0 Build 262 08/18/2010 SP 1 SJ Full Version
+Revision Name : MedOIP
+Top-level Entity Name : Top_MedOIP
+Family : Cyclone IV E
+Total logic elements : 960
+    Total combinational functions : 567
+    Dedicated logic registers : 768
+Total registers : 768
+Total pins : 20
+Total virtual pins : 0
+Total memory bits : 217,088
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

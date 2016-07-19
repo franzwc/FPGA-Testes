@@ -1,0 +1,123 @@
+Altera SOPC Builder Version 10.01 Build 262
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2014.06.18 12:14:45 (*) mk_custom_sdk starting
+# 2014.06.18 12:14:45 (*) Reading project D:/ARQ/Prototipo_Medipix/Projeto/3_Terceira_fase_IMG/Medipix_0/Medipix_sopc.ptf.
+
+# 2014.06.18 12:14:46 (*) Finding all CPUs
+# 2014.06.18 12:14:46 (*) Finding all available components
+# 2014.06.18 12:14:46 (*) Reading D:/ARQ/Prototipo_Medipix/Projeto/3_Terceira_fase_IMG/Medipix_0/.sopc_builder/install.ptf
+
+# 2014.06.18 12:14:46 (*) Found 69 components
+
+# 2014.06.18 12:14:46 (*) Finding all peripherals
+
+# 2014.06.18 12:14:46 (*) Finding software components
+
+# 2014.06.18 12:14:46 (*) (Legacy SDK Generation Skipped)
+# 2014.06.18 12:14:46 (*) (All TCL Script Generation Skipped)
+# 2014.06.18 12:14:46 (*) (No Libraries Built)
+# 2014.06.18 12:14:46 (*) (Contents Generation Skipped)
+# 2014.06.18 12:14:46 (*) mk_custom_sdk finishing
+
+# 2014.06.18 12:14:46 (*) Starting generation for system: Medipix_sopc.
+
+.
+.
+..
+.
+.
+.
+.
+........
+....
+
+# 2014.06.18 12:14:47 (*) Running Generator Program for cpu_linux
+
+# 2014.06.18 12:14:50 (*) Starting Nios II generation
+# 2014.06.18 12:14:50 (*)   Checking for plaintext license.
+# 2014.06.18 12:14:51 (*)   Plaintext license not found.
+# 2014.06.18 12:14:51 (*)   Checking for encrypted license (non-evaluation).
+# 2014.06.18 12:14:51 (*)   Encrypted license found.  SOF will not be time-limited.
+# 2014.06.18 12:14:51 (*)   Getting CPU configuration settings
+# 2014.06.18 12:14:51 (*)   Elaborating CPU configuration settings
+# 2014.06.18 12:14:51 (*)   Creating all objects for CPU
+
+# 2014.06.18 12:14:51 (*)     Testbench
+# 2014.06.18 12:14:51 (*)     Instruction decoding
+# 2014.06.18 12:14:51 (*)       Instruction fields
+# 2014.06.18 12:14:51 (*)       Instruction decodes
+# 2014.06.18 12:14:52 (*)       Signals for RTL simulation waveforms
+# 2014.06.18 12:14:52 (*)       Instruction controls
+# 2014.06.18 12:14:52 (*)     Pipeline frontend
+# 2014.06.18 12:14:52 (*)     Pipeline backend
+# 2014.06.18 12:14:54 (*)   Generating HDL from CPU objects
+# 2014.06.18 12:14:56 (*)   Creating encrypted HDL
+
+# 2014.06.18 12:14:57 (*) Done Nios II generation
+
+# 2014.06.18 12:14:57 (*) Running Generator Program for jtag_uart_0
+
+# 2014.06.18 12:14:58 (*) Running Generator Program for sys_clk_freq
+
+# 2014.06.18 12:14:59 (*) Running Generator Program for ram
+
+# 2014.06.18 12:14:59 (*) Running Generator Program for epcs_controller
+
+# 2014.06.18 12:15:00 (*) Running Generator Program for spi_0
+
+# 2014.06.18 12:15:01 (*) Running Generator Program for uart_0
+
+# 2014.06.18 12:15:02 (*) Running Generator Program for Medipix_sopc_burst_0
+
+# 2014.06.18 12:15:03 (*) Running Generator Program for Medipix_sopc_burst_1
+
+# 2014.06.18 12:15:04 (*) Running Generator Program for Medipix_sopc_burst_2
+
+# 2014.06.18 12:15:05 (*) Running Generator Program for Medipix_sopc_burst_3
+
+# 2014.06.18 12:15:06 (*) Running Generator Program for Medipix_sopc_burst_4
+
+# 2014.06.18 12:15:07 (*) Running Generator Program for Medipix_sopc_burst_5
+
+# 2014.06.18 12:15:08 (*) Running Generator Program for Medipix_sopc_burst_6
+
+# 2014.06.18 12:15:08 (*) Running Generator Program for Medipix_sopc_burst_7
+
+# 2014.06.18 12:15:09 (*) Running Generator Program for Medipix_sopc_burst_8
+
+# 2014.06.18 12:15:11 (*) Running Generator Program for Medipix_sopc_burst_9
+
+# 2014.06.18 12:15:12 (*) Running Generator Program for Medipix_sopc_burst_10
+
+# 2014.06.18 12:15:13 (*) Running Generator Program for Medipix_sopc_burst_11
+
+# 2014.06.18 12:15:14 (*) Running Generator Program for clock_crossing
+
+.
+
+# 2014.06.18 12:15:15 (*) Running Test Generator Program for ram
+
+# 2014.06.18 12:15:15 (*) Making arbitration and system (top) modules.
+
+# 2014.06.18 12:15:36 (*) Generating Quartus symbol for top level: Medipix_sopc
+
+# 2014.06.18 12:15:36 (*) Generating Symbol D:/ARQ/Prototipo_Medipix/Projeto/3_Terceira_fase_IMG/Medipix_0/Medipix_sopc.bsf
+
+# 2014.06.18 12:15:36 (*) Creating command-line system-generation script: D:/ARQ/Prototipo_Medipix/Projeto/3_Terceira_fase_IMG/Medipix_0/Medipix_sopc_generation_script
+
+# 2014.06.18 12:15:36 (*) Running setup for HDL simulator: modelsim
+
+
+# 2014.06.18 12:15:36 (*) Completed generation for system: Medipix_sopc.
+# 2014.06.18 12:15:36 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/ARQ/Prototipo_Medipix/Projeto/3_Terceira_fase_IMG/Medipix_0/Medipix_sopc.ptf 
+  System HDL Model : D:/ARQ/Prototipo_Medipix/Projeto/3_Terceira_fase_IMG/Medipix_0/Medipix_sopc.v 
+  System Generation Script : D:/ARQ/Prototipo_Medipix/Projeto/3_Terceira_fase_IMG/Medipix_0/Medipix_sopc_generation_script 
+
+# 2014.06.18 12:15:36 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

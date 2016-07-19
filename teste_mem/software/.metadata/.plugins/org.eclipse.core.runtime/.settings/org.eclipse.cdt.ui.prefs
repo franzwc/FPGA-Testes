@@ -1,0 +1,11 @@
+#Mon Dec 02 17:56:50 BRST 2013
+useQuickDiffPrefPage=true
+useAnnotationsPrefPage=true
+c_numbers=0,255,0
+c_default=0,255,0
+c_operators=0,255,0
+eclipse.preferences.version=1
+org.eclipse.cdt.ui.text.templates.custom=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+hoverModifierMasks=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.ui.CSourceHover;262144;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;0;org.eclipse.cdt.ui.CDocHover;0;org.eclipse.cdt.ui.AnnotationHover;0;
+hoverModifiers=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.ui.CSourceHover;Ctrl;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;\!0;org.eclipse.cdt.ui.CDocHover;\!0;org.eclipse.cdt.ui.AnnotationHover;\!0;
+c_braces=255,255,0

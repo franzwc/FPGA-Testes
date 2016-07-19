@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Medipix_prj">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|cpu_pll:u_cpu_pll|altpll:altpll_component" CBX_FILE_NAME="cpu_pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_rsc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_jgi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_dvf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_1a04.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter" CBX_FILE_NAME="cntr_egi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter" CBX_FILE_NAME="cntr_23j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|TOP_TsoIP:u_TOP_TsoIP|IPRamHeadermac:u_IpRamHeadermac|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_9lq1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|TOP_TsoIP:u_TOP_TsoIP|IpFifoTsOIp:u_IpFifoTsOIp|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_dun1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|TOP_TsoIP:u_TOP_TsoIP|mux_crc:u_mux_crc|altshift_taps:o_Data_rtl_0" CBX_FILE_NAME="shift_taps_9km.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Medipix|sld_signaltap:auto_signaltap_1|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter" CBX_FILE_NAME="cntr_g9j.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

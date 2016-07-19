@@ -1,0 +1,190 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 272 304)
+	(text "TOP_TsOIp" (rect 5 0 68 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 272 25 284)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 27 36 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "valid" (rect 21 43 46 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "sync" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "sync" (rect 21 59 49 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "data[7..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "data[7..0]" (rect 21 75 74 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "PacketLength[7..0]" (rect 0 0 105 14)(font "Arial" (font_size 8)))
+		(text "PacketLength[7..0]" (rect 21 91 126 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "nRst" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "nRst" (rect 21 107 46 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "BTS_comp" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "BTS_comp" (rect 21 123 82 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "ClkPhy" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "ClkPhy" (rect 21 139 58 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "NumPct[2..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "NumPct[2..0]" (rect 21 155 91 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "osync" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "osync" (rect 200 27 235 41)(font "Arial" (font_size 8)))
+		(line (pt 256 32)(pt 240 32)(line_width 1))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "oend" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "oend" (rect 207 43 235 57)(font "Arial" (font_size 8)))
+		(line (pt 256 48)(pt 240 48)(line_width 1))
+	)
+	(port
+		(pt 256 64)
+		(output)
+		(text "ovalid" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "ovalid" (rect 202 59 235 73)(font "Arial" (font_size 8)))
+		(line (pt 256 64)(pt 240 64)(line_width 1))
+	)
+	(port
+		(pt 256 80)
+		(output)
+		(text "odata[7..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "odata[7..0]" (rect 175 75 235 89)(font "Arial" (font_size 8)))
+		(line (pt 256 80)(pt 240 80)(line_width 3))
+	)
+	(port
+		(pt 256 112)
+		(output)
+		(text "mdic" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "mdic" (rect 210 107 235 121)(font "Arial" (font_size 8)))
+		(line (pt 256 112)(pt 240 112)(line_width 1))
+	)
+	(port
+		(pt 256 128)
+		(output)
+		(text "PhytxEna" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "PhytxEna" (rect 182 123 235 137)(font "Arial" (font_size 8)))
+		(line (pt 256 128)(pt 240 128)(line_width 1))
+	)
+	(port
+		(pt 256 144)
+		(output)
+		(text "PhytxData[3..0]" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "PhytxData[3..0]" (rect 149 139 235 153)(font "Arial" (font_size 8)))
+		(line (pt 256 144)(pt 240 144)(line_width 3))
+	)
+	(port
+		(pt 256 160)
+		(output)
+		(text "NivelRdFifo[10..0]" (rect 0 0 99 14)(font "Arial" (font_size 8)))
+		(text "NivelRdFifo[10..0]" (rect 136 155 235 169)(font "Arial" (font_size 8)))
+		(line (pt 256 160)(pt 240 160)(line_width 3))
+	)
+	(port
+		(pt 256 176)
+		(output)
+		(text "enRd" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "enRd" (rect 206 171 235 185)(font "Arial" (font_size 8)))
+		(line (pt 256 176)(pt 240 176)(line_width 1))
+	)
+	(port
+		(pt 256 192)
+		(output)
+		(text "enRdHdEth" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "enRdHdEth" (rect 173 187 235 201)(font "Arial" (font_size 8)))
+		(line (pt 256 192)(pt 240 192)(line_width 1))
+	)
+	(port
+		(pt 256 208)
+		(output)
+		(text "Out_Valid" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "Out_Valid" (rect 180 203 235 217)(font "Arial" (font_size 8)))
+		(line (pt 256 208)(pt 240 208)(line_width 1))
+	)
+	(port
+		(pt 256 224)
+		(output)
+		(text "Out_Sync" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "Out_Sync" (rect 179 219 235 233)(font "Arial" (font_size 8)))
+		(line (pt 256 224)(pt 240 224)(line_width 1))
+	)
+	(port
+		(pt 256 240)
+		(output)
+		(text "Out_End" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "Out_End" (rect 187 235 235 249)(font "Arial" (font_size 8)))
+		(line (pt 256 240)(pt 240 240)(line_width 1))
+	)
+	(port
+		(pt 256 96)
+		(bidir)
+		(text "mdio" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "mdio" (rect 210 91 235 105)(font "Arial" (font_size 8)))
+		(line (pt 256 96)(pt 240 96)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 272)(line_width 1))
+	)
+)

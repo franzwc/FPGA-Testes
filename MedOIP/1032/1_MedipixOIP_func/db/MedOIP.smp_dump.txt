@@ -1,0 +1,7 @@
+
+State Machine - |Top_MedOIP|TOP_TSoIP:u_TOP_TSoIP|PhyInterface:u_PhyInterface|StateTx
+Name StateTx.S_PAYLOAD StateTx.S_PREAMBLE StateTx.S_TESTE StateTx.S_IDLE 
+StateTx.S_IDLE 0 0 0 0 
+StateTx.S_TESTE 0 0 1 1 
+StateTx.S_PREAMBLE 0 1 0 1 
+StateTx.S_PAYLOAD 1 0 0 1 

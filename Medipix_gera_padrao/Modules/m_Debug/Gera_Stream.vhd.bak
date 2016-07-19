@@ -1,0 +1,90 @@
+-- VHDL FILE
+--{{{ HEADER
+--!@file
+--------------------------------------------------------------------------------
+--!@brief Gera_stream
+--------------------------------------------------------------------------------                                                                      
+--! DESCRIPTION:
+--!
+--! Gera Stream de imagem para debug
+--!
+--! DETAILS:      
+--!
+--!- Project Name: Gera_Stream.v                       
+--!- Module Name: Gera_Stream
+--!- Tools: Quartus II 10.0 SP1 
+--!- Author: Franz Wagner
+--!- Company: LABORATORIO NACIONAL DE LUZ SINCROTRON - GRUPO DETECTORES
+--!- Create Date: 11/07/2014     
+--!- Version: 1.0.0 (Jul/2014) 
+--------------------------------------------------------------------------------
+-- LNLS - DET - 2014
+--------------------------------------------------------------------------------
+--}}} Header*/
+
+--!IEEE Libraries 
+Library ieee;
+use ieee.std_logic_1164.all;			-- Std_logic types and related functions;
+use ieee.numeric_std.all;				-- X Not use with std_logic_arith
+--------------------------------------------------------------------------------
+				
+entity Gera_Stream is
+
+--------------------------------------------------------------------------------
+--  >> Portas de acesso ao circuito
+--------------------------------------------------------------------------------
+
+port(
+	
+	-- Entradas Medipix
+	In_Reset                    :   in std_logic;
+	In_Clk                      :   in std_logic;
+	In_Start_Use                :   in std_logic;
+	
+	Out_data                    :   out std_logic_vector(7 downto 0);
+	Out_valid                   :   out std_logic;
+	Out_sync                    :   out std_logic
+		
+);
+
+end Gera_Stream;
+
+architecture Gera_Stream_arc of Gera_Stream is
+
+
+begin
+
+process (In_Clk, In_Reset)
+--------------------------------------------------------------------------------
+--  >> Declaração das variáveis do Processo
+--------------------------------------------------------------------------------
+
+
+begin
+
+--------------------------------------------------------------------------------
+--  >> Etapa de Resete do circuito
+--------------------------------------------------------------------------------
+if (In_Reset = '1' ) then
+
+	-- Inicialização das saídas
+	Out_data            <=(others=>'0');
+	Out_valid           <='0';
+	Out_sync            <='0';
+	
+--------------------------------------------------------------------------------
+--  >> Implementação do circuito - funcionamento em função da transição de clock
+--------------------------------------------------------------------------------
+
+elsif (rising_edge(In_Clk)) then
+
+
+
+end if;
+
+End process;
+
+end Gera_Stream_arc;
+
+--------------------------------------------------------------------------------
+--  >> TÉRMINO DO PROGRAMA

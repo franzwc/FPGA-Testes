@@ -1,0 +1,13 @@
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) Modules/m_Txtable/IP_ram_txtable.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) Modules/m_Txtable/txdata_tovhdl.vhd]
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) Modules/m_Txtable/txtable_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) Modules/m_Txtable/avalon_wrdata.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) tx_table.vhd]
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) eth_ocm/eth_ocm_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) igor_mac.v]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) Modules/m_Txtable/txtable.vhd]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) eth_ocm/eth_ocm.v]
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu_linux.sdc]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu_linux.ocp]
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID 74867AFB78C700000146AF8971E0 
+ 

@@ -1,0 +1,581 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 10.0 Build 262 08/18/2010 Service Pack 1 SJ Full Version
+# Date created = 10:58:23  November 29, 2013
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Medipix_prj_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE75F23C8
+set_global_assignment -name TOP_LEVEL_ENTITY Top_Medipix
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "10.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:58:23  NOVEMBER 29, 2013"
+set_global_assignment -name LAST_QUARTUS_VERSION "10.0 SP1"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 8
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name INCREMENTAL_COMPILATION OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA OFF
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS OFF
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING OFF
+set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING OFF
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DCLK_AFTER_CONFIGURATION "USE AS REGULAR IO"
+
+set_location_assignment PIN_A12 -to Clk125
+set_location_assignment PIN_B12 -to Clk25
+set_location_assignment PIN_E12 -to Ddr2_A[0]
+set_location_assignment PIN_B7 -to Ddr2_A[10]
+set_location_assignment PIN_A8 -to Ddr2_A[11]
+set_location_assignment PIN_B8 -to Ddr2_A[12]
+set_location_assignment PIN_A9 -to Ddr2_A[13]
+set_location_assignment PIN_F13 -to Ddr2_A[1]
+set_location_assignment PIN_E15 -to Ddr2_A[2]
+set_location_assignment PIN_E16 -to Ddr2_A[3]
+set_location_assignment PIN_F15 -to Ddr2_A[4]
+set_location_assignment PIN_F14 -to Ddr2_A[5]
+set_location_assignment PIN_C19 -to Ddr2_A[6]
+set_location_assignment PIN_D19 -to Ddr2_A[7]
+set_location_assignment PIN_B10 -to Ddr2_A[8]
+set_location_assignment PIN_A7 -to Ddr2_A[9]
+set_location_assignment PIN_E11 -to Ddr2_Ba[0]
+set_location_assignment PIN_A17 -to Ddr2_Ba[1]
+set_location_assignment PIN_B17 -to Ddr2_Ba[2]
+set_location_assignment PIN_A16 -to Ddr2_Cas_N
+set_location_assignment PIN_A20 -to Ddr2_Cke
+set_location_assignment PIN_A18 -to Ddr2_Clk_N
+set_location_assignment PIN_B18 -to Ddr2_Clk_P
+set_location_assignment PIN_B9 -to Ddr2_Cs_N
+set_location_assignment PIN_F7 -to Ddr2_Dm[0]
+set_location_assignment PIN_F11 -to Ddr2_Dm[1]
+set_location_assignment PIN_C6 -to Ddr2_Dq[0]
+set_location_assignment PIN_B14 -to Ddr2_Dq[10]
+set_location_assignment PIN_A15 -to Ddr2_Dq[11]
+set_location_assignment PIN_B15 -to Ddr2_Dq[12]
+set_location_assignment PIN_B16 -to Ddr2_Dq[13]
+set_location_assignment PIN_E14 -to Ddr2_Dq[14]
+set_location_assignment PIN_D13 -to Ddr2_Dq[15]
+set_location_assignment PIN_A3 -to Ddr2_Dq[1]
+set_location_assignment PIN_B3 -to Ddr2_Dq[2]
+set_location_assignment PIN_A4 -to Ddr2_Dq[3]
+set_location_assignment PIN_B4 -to Ddr2_Dq[4]
+set_location_assignment PIN_A5 -to Ddr2_Dq[5]
+set_location_assignment PIN_F10 -to Ddr2_Dq[6]
+set_location_assignment PIN_F8 -to Ddr2_Dq[7]
+set_location_assignment PIN_A13 -to Ddr2_Dq[8]
+set_location_assignment PIN_A14 -to Ddr2_Dq[9]
+set_location_assignment PIN_C8 -to Ddr2_Dqs[0]
+set_location_assignment PIN_B13 -to Ddr2_Dqs[1]
+set_location_assignment PIN_B20 -to Ddr2_Odt
+set_location_assignment PIN_C13 -to Ddr2_Ras_N
+set_location_assignment PIN_C17 -to Ddr2_We_N
+set_location_assignment PIN_A11 -to Eth_Int_N
+set_location_assignment PIN_H7 -to Eth_Mdc
+set_location_assignment PIN_D10 -to Eth_Mdio
+set_location_assignment PIN_G5 -to Eth_Rst_N
+set_location_assignment PIN_B6 -to Eth_RxCtl
+set_location_assignment PIN_B11 -to Eth_Rxc
+set_location_assignment PIN_C3 -to Eth_Rxd[0]
+set_location_assignment PIN_C7 -to Eth_Rxd[1]
+set_location_assignment PIN_E7 -to Eth_Rxd[2]
+set_location_assignment PIN_F9 -to Eth_Rxd[3]
+set_location_assignment PIN_E6 -to Eth_TxCtl
+set_location_assignment PIN_E5 -to Eth_Txc
+set_location_assignment PIN_A6 -to Eth_Txd[0]
+set_location_assignment PIN_D7 -to Eth_Txd[1]
+set_location_assignment PIN_A10 -to Eth_Txd[2]
+set_location_assignment PIN_C4 -to Eth_Txd[3]
+set_location_assignment PIN_K2 -to Flash_Cclk
+set_location_assignment PIN_E2 -to Flash_Cs_N
+set_location_assignment PIN_D1 -to Flash_Di
+set_location_assignment PIN_K1 -to Flash_Do
+set_location_assignment PIN_B1 -to Led_N[0]
+set_location_assignment PIN_B2 -to Led_N[1]
+set_location_assignment PIN_J2 -to Led_N[2]
+
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Clk25
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Clk125
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Txd[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_RxCtl
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Int_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Txd[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Rxd[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Rxd[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to Eth_Rst_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Rxd[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Txd[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Rxd[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Txd[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_TxCtl
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Txc
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Rxc
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to Eth_Mdc
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Eth_Mdio
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Ba[2]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Ba[1]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Cas_N
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Ba[0]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_We_N
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[13]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[0]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[12]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[1]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[11]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[2]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[10]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[3]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[9]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[4]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[8]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[5]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[7]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[6]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[6]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[7]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[5]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[8]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[4]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[9]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[3]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[10]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[2]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[11]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[1]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[12]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_A[0]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[13]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Cke
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[14]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Cs_N
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dq[15]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Clk_N
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dqs[0]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dm[1]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dqs[1]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Clk_P
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Dm[0]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Odt
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to Ddr2_Ras_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to Led_N[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to Led_N[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to Led_N[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to Flash_Di
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to Flash_Do
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to Flash_Cclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to Flash_Cs_N
+
+
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS128
+set_global_assignment -name OUTPUT_IO_TIMING_ENDPOINT "NEAR END"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name MISC_FILE "C:/Users/franz.couto/Desktop/Prototipo_Medipix/Projeto/Medipix_0/Medipix_prj.dpf"
+set_global_assignment -name RESERVE_OTHER_AP_PINS_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_instance_assignment -name IO_STANDARD LVDS -to En_in_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Clk_in_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Clk_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Cont_sel_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[7]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[6]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[5]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[4]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[3]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[2]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[1]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[0]
+set_location_assignment PIN_AA12 -to Clk_in_Mdpx
+set_location_assignment PIN_AA13 -to En_in_Mdpx
+set_location_assignment PIN_AA15 -to Data_in_Mdpx[0]
+set_location_assignment PIN_AA14 -to Data_in_Mdpx[1]
+set_location_assignment PIN_AA8 -to Data_in_Mdpx[2]
+set_location_assignment PIN_W13 -to Data_in_Mdpx[3]
+set_location_assignment PIN_AA9 -to Data_in_Mdpx[4]
+set_location_assignment PIN_AA11 -to Data_in_Mdpx[5]
+set_location_assignment PIN_AA10 -to Data_in_Mdpx[6]
+set_location_assignment PIN_W10 -to Data_in_Mdpx[7]
+set_location_assignment PIN_N2 -to Clk_out_Mdpx
+set_location_assignment PIN_V2 -to Cont_sel_out_Mdpx
+set_location_assignment PIN_M2 -to En_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to En_out_Mdpx
+set_location_assignment PIN_P4 -to Reset_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Reset_out_Mdpx
+set_location_assignment PIN_U2 -to Shutter_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Shutter_out_Mdpx
+set_location_assignment PIN_AB12 -to "Clk_in_Mdpx(n)"
+set_location_assignment PIN_P3 -to "Reset_out_Mdpx(n)"
+set_location_assignment PIN_U1 -to "Shutter_out_Mdpx(n)"
+set_location_assignment PIN_AB13 -to "En_in_Mdpx(n)"
+set_location_assignment PIN_M1 -to "En_out_Mdpx(n)"
+set_location_assignment PIN_N1 -to "Clk_out_Mdpx(n)"
+set_location_assignment PIN_V1 -to "Cont_sel_out_Mdpx(n)"
+set_location_assignment PIN_L6 -to Data_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Data_out_Mdpx
+set_location_assignment PIN_AB15 -to "Data_in_Mdpx[0](n)"
+set_location_assignment PIN_AB14 -to "Data_in_Mdpx[1](n)"
+set_location_assignment PIN_AB8 -to "Data_in_Mdpx[2](n)"
+set_location_assignment PIN_Y13 -to "Data_in_Mdpx[3](n)"
+set_location_assignment PIN_AB9 -to "Data_in_Mdpx[4](n)"
+set_location_assignment PIN_AB11 -to "Data_in_Mdpx[5](n)"
+set_location_assignment PIN_AB10 -to "Data_in_Mdpx[6](n)"
+set_location_assignment PIN_Y10 -to "Data_in_Mdpx[7](n)"
+set_location_assignment PIN_R2 -to MtxClr_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to MtxClr_out_Mdpx
+set_location_assignment PIN_P2 -to TPSWT_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to TPSWT_out_Mdpx
+set_location_assignment PIN_L21 -to ADC_Din
+set_location_assignment PIN_L22 -to ADC_Dout
+set_location_assignment PIN_J22 -to ADC_Sclk
+set_location_assignment PIN_J21 -to ADC_Csn
+set_location_assignment PIN_G18 -to DAC_Csn
+set_location_assignment PIN_K18 -to DAC_Sck
+set_location_assignment PIN_K21 -to DAC_Sdi
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DAC_Sdi
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DAC_Sck
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DAC_Csn
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ADC_Sclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ADC_Dout
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ADC_Din
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ADC_Csn
+set_location_assignment PIN_H1 -to rxd_uart
+set_location_assignment PIN_J4 -to txd_uart
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rxd_uart
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to txd_uart
+set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to Clk_out_Mdpx
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to En_out_Mdpx
+set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to Clk_out_Mdpx
+set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to Clk_in_Mdpx
+set_location_assignment PIN_M6 -to "Data_out_Mdpx(n)"
+set_location_assignment PIN_R1 -to "MtxClr_out_Mdpx(n)"
+set_location_assignment PIN_P1 -to "TPSWT_out_Mdpx(n)"
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "cpu_pll:u_cpu_pll|c3" -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to Clk_in_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to Clk_out_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to Clk_in_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to Clk_out_Mdpx -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334531" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_3
+set_global_assignment -name MISC_FILE "C:/Users/franz.couto/Desktop/Prototipo_Medipix/Projeto/2_Segunda_fase_MDPXoIP/Medipix_0/Medipix_prj.dpf"
+set_global_assignment -name LL_ENABLED ON -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_RESERVED OFF -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_instance_assignment -name LL_MEMBER_OF "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC" -to "Medipix_Bridge:u_Medipix_Bridge|Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC" -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_ENABLED ON -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_RESERVED OFF -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_instance_assignment -name LL_MEMBER_OF "Gera_Rajada_OMR:u_Gera_Rajada_OMR" -to "Medipix_Bridge:u_Medipix_Bridge|Gera_Rajada_OMR:u_Gera_Rajada_OMR" -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_HEIGHT 2 -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_WIDTH 3 -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_ORIGIN X8_Y26 -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_STATE LOCKED -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_HEIGHT 2 -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_WIDTH 3 -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_ORIGIN X5_Y26 -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_STATE LOCKED -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_ENABLED ON -section_id "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC"
+set_global_assignment -name LL_RESERVED OFF -section_id "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC"
+set_instance_assignment -name LL_MEMBER_OF "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC" -to "Medipix_Bridge:u_Medipix_Bridge|Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC" -section_id "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC"
+set_global_assignment -name LL_HEIGHT 5 -section_id "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC"
+set_global_assignment -name LL_WIDTH 7 -section_id "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC"
+set_global_assignment -name LL_ORIGIN X16_Y24 -section_id "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC"
+set_global_assignment -name LL_STATE LOCKED -section_id "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC"
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id "Gera_Rajada_Load_DAC:u_Gera_Rajada_Load_DAC"
+set_global_assignment -name LL_ENABLED ON -section_id "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR"
+set_global_assignment -name LL_RESERVED OFF -section_id "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR"
+set_instance_assignment -name LL_MEMBER_OF "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR" -to "Medipix_Bridge:u_Medipix_Bridge|Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR" -section_id "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR"
+set_global_assignment -name LL_ENABLED ON -section_id "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH"
+set_global_assignment -name LL_RESERVED OFF -section_id "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH"
+set_instance_assignment -name LL_MEMBER_OF "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH" -to "Medipix_Bridge:u_Medipix_Bridge|Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH" -section_id "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH"
+set_global_assignment -name LL_HEIGHT 3 -section_id "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR"
+set_global_assignment -name LL_WIDTH 4 -section_id "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR"
+set_global_assignment -name LL_ORIGIN X11_Y25 -section_id "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR"
+set_global_assignment -name LL_STATE LOCKED -section_id "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR"
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id "Gera_Rajada_Load_CTPR:u_Gera_Rajada_Load_CTPR"
+set_global_assignment -name LL_HEIGHT 4 -section_id "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH"
+set_global_assignment -name LL_WIDTH 6 -section_id "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH"
+set_global_assignment -name LL_ORIGIN X9_Y21 -section_id "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH"
+set_global_assignment -name LL_STATE LOCKED -section_id "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH"
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id "Gera_Rajada_Load_CounterH:u_Gera_Rajada_Load_CounterH"
+set_global_assignment -name LL_ENABLED ON -section_id "Decoder_Dacs:u_Decoder_Dacs"
+set_global_assignment -name LL_RESERVED OFF -section_id "Decoder_Dacs:u_Decoder_Dacs"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Decoder_Dacs:u_Decoder_Dacs"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Decoder_Dacs:u_Decoder_Dacs"
+set_instance_assignment -name LL_MEMBER_OF "Decoder_Dacs:u_Decoder_Dacs" -to "Medipix_Bridge:u_Medipix_Bridge|Decoder_Dacs:u_Decoder_Dacs" -section_id "Decoder_Dacs:u_Decoder_Dacs"
+set_global_assignment -name LL_HEIGHT 8 -section_id "Decoder_Dacs:u_Decoder_Dacs"
+set_global_assignment -name LL_WIDTH 12 -section_id "Decoder_Dacs:u_Decoder_Dacs"
+set_global_assignment -name LL_ORIGIN X21_Y14 -section_id "Decoder_Dacs:u_Decoder_Dacs"
+set_global_assignment -name LL_STATE LOCKED -section_id "Decoder_Dacs:u_Decoder_Dacs"
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id "Decoder_Dacs:u_Decoder_Dacs"
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=4096" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=4096" -section_id auto_signaltap_3
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/PCK_CRC32_D4.vhd
+set_global_assignment -name VERILOG_FILE Modules/m_Top_Medipix/Top_Medipix.v
+set_global_assignment -name VHDL_FILE Modules/m_ADC_Bridge/ADC_Bridge.vhd
+set_global_assignment -name VHDL_FILE Modules/m_DAC_Bridge/DAC_Bridge.vhd
+set_global_assignment -name VERILOG_FILE Modules/m_Rx_Data_Medipix/Rx_Data_Medipix.v
+set_global_assignment -name VHDL_FILE Modules/m_Rx_Data_Medipix/Data_Discriminate.vhd
+set_global_assignment -name VERILOG_FILE Modules/m_Medipix_Bridge/Medipix_Bridge.v
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Select_Output.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_Read_DAC.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_Read_CounterH.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_OMR.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_Load_DAC.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_Load_CTPR.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_Load_CounterH.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_M.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Decoder_Parametros.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Decoder_Dacs.vhd
+set_global_assignment -name VERILOG_FILE alt_ddrx_timing_param.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_bypass.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_cache.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_rank_monitor.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_bank_timer_info.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_bank_timer.v
+set_global_assignment -name VERILOG_FILE Modules/m_MedOIp/VHD/TOP_MEDoIP.v
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/teste_crc.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/IP/IPRamHeadermac.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/IP/IpFifoTsOIp.vhd
+set_global_assignment -name VERILOG_FILE Modules/m_MedOIp/VHD/auk_udpipmac_ethernet_crc.v
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/CtrlRdTxTsOIp.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/CtrlWrTxTsOIP.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/mac_header.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/mux_crc.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/MuxHdPactAddCRC.vhd
+set_global_assignment -name VERILOG_FILE Modules/m_MedOIp/VHD/myblkinv2.v
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/PhyInterface.vhd
+set_global_assignment -name VERILOG_FILE alt_ddrx_bank_timer_wrapper.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_avalon_if.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_cmd_queue.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_cmd_gen.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_wdata_fifo.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_input_if.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_clock_and_reset.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_controller.v
+set_global_assignment -name VERILOG_FILE spi_0.v
+set_global_assignment -name VERILOG_FILE sys_clk_freq.v
+set_global_assignment -name VERILOG_FILE ram_alt_ddrx_controller_wrapper.v
+set_global_assignment -name VERILOG_FILE ram_controller_phy.v
+set_global_assignment -name VERILOG_FILE ram.v
+set_global_assignment -name VERILOG_FILE cpu_linux.v
+set_global_assignment -name VERILOG_FILE jtag_uart_0.v
+set_global_assignment -name VERILOG_FILE epcs_controller.v
+set_global_assignment -name VERILOG_FILE cpu_linux_test_bench.v
+set_global_assignment -name VERILOG_FILE cpu_linux_oci_test_bench.v
+set_global_assignment -name VERILOG_FILE cpu_linux_mult_cell.v
+set_global_assignment -name VERILOG_FILE cpu_linux_jtag_debug_module_wrapper.v
+set_global_assignment -name VERILOG_FILE cpu_linux_jtag_debug_module_tck.v
+set_global_assignment -name VERILOG_FILE cpu_linux_jtag_debug_module_sysclk.v
+set_global_assignment -name VERILOG_FILE clock_crossing.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_10.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_9.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_8.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_7.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_6.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_5.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_4.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_3.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_2.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_1.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc_burst_0.v
+set_global_assignment -name VERILOG_FILE Medipix_sopc.v
+set_global_assignment -name SDC_FILE ram_phy_ddr_timing.sdc
+set_global_assignment -name SDC_FILE ram_example_top.sdc
+set_global_assignment -name SDC_FILE medipix.sdc
+set_global_assignment -name SDC_FILE altera_avalon_half_rate_bridge_constraints.sdc
+set_global_assignment -name VERILOG_FILE eth_ocm/timescale.v
+set_global_assignment -name VERILOG_FILE eth_ocm/test_fifo.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_txstatem.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_txethmac.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_txcounters.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_transmitcontrol.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_shiftreg.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_rxstatem.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_rxethmac.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_rxcounters.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_rxaddrcheck.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_registers.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_register.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_receivecontrol.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_random.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_outputcontrol.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_miim.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_macstatus.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_maccontrol.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_defines.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_dc_reg.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_crc.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_cop.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_clockgen.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_avalon_txdma.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_avalon_rxdma.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_avalon_dma_fifo.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_avalon_bd_ram.v
+set_global_assignment -name VERILOG_FILE eth_ocm/eth_avalon.v
+set_global_assignment -name QIP_FILE Medipix_sopc.qip
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name VERILOG_FILE alt_ddrx_state_machine.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_odt_gen.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_afi_block.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_addr_cmd.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_ddr2_odt_gen.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_ecc.v
+set_global_assignment -name VERILOG_FILE alt_ddrx_csr.v
+set_global_assignment -name VERILOG_FILE ram_phy_alt_mem_phy.v
+set_global_assignment -name VERILOG_FILE ram_phy.v
+set_global_assignment -name VHDL_FILE ram_phy_alt_mem_phy_seq.vhd
+set_global_assignment -name VERILOG_FILE ram_phy_alt_mem_phy_seq_wrapper.v
+set_global_assignment -name VERILOG_FILE ram_phy_alt_mem_phy_pll.v
+set_global_assignment -name VERILOG_FILE Modules/m_Reset_Syncronize/Rst_Syncronizer.v
+set_global_assignment -name VHDL_FILE Modules/m_Eth_Share/Eth_Share.vhd
+set_global_assignment -name QIP_FILE Modules/m_Cpu_PLL/cpu_pll.qip
+set_global_assignment -name QIP_FILE Modules/m_Rx_Data_Medipix/m_Input_Fifo/Input_Fifo_65525.qip
+set_global_assignment -name VHDL_FILE Modules/m_Rx_Data_Medipix/Read_Input_Fifo.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Rx_Data_Medipix/Input_En.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Shutter.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/Decoder_IP_TX.vhd
+set_global_assignment -name QIP_FILE Modules/m_MedOIp/IP/IPRamHeadermac.qip
+set_global_assignment -name QIP_FILE Modules/m_MedOIp/IP/IpFifoTsOIp.qip
+set_global_assignment -name LL_ENABLED ON -section_id "Decoder_IP_TX:u_Decoder_IP_TX"
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id "Decoder_IP_TX:u_Decoder_IP_TX"
+set_global_assignment -name LL_STATE LOCKED -section_id "Decoder_IP_TX:u_Decoder_IP_TX"
+set_global_assignment -name LL_RESERVED OFF -section_id "Decoder_IP_TX:u_Decoder_IP_TX"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Decoder_IP_TX:u_Decoder_IP_TX"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Decoder_IP_TX:u_Decoder_IP_TX"
+set_global_assignment -name LL_WIDTH 9 -section_id "Decoder_IP_TX:u_Decoder_IP_TX"
+set_global_assignment -name LL_HEIGHT 6 -section_id "Decoder_IP_TX:u_Decoder_IP_TX"
+set_global_assignment -name LL_ORIGIN X34_Y43 -section_id "Decoder_IP_TX:u_Decoder_IP_TX"
+set_instance_assignment -name LL_MEMBER_OF "Decoder_IP_TX:u_Decoder_IP_TX" -to "TOP_MEDoIP:u_TOP_MEDoIP|Decoder_IP_TX:u_Decoder_IP_TX" -section_id "Decoder_IP_TX:u_Decoder_IP_TX"
+set_global_assignment -name LL_ENABLED ON -section_id "Decoder_Parametros:u_Decoder_Parametros"
+set_global_assignment -name LL_RESERVED OFF -section_id "Decoder_Parametros:u_Decoder_Parametros"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Decoder_Parametros:u_Decoder_Parametros"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Decoder_Parametros:u_Decoder_Parametros"
+set_instance_assignment -name LL_MEMBER_OF "Decoder_Parametros:u_Decoder_Parametros" -to "Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros" -section_id "Decoder_Parametros:u_Decoder_Parametros"
+set_global_assignment -name LL_HEIGHT 4 -section_id "Decoder_Parametros:u_Decoder_Parametros"
+set_global_assignment -name LL_WIDTH 6 -section_id "Decoder_Parametros:u_Decoder_Parametros"
+set_global_assignment -name LL_ORIGIN X27_Y30 -section_id "Decoder_Parametros:u_Decoder_Parametros"
+set_global_assignment -name LL_STATE LOCKED -section_id "Decoder_Parametros:u_Decoder_Parametros"
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id "Decoder_Parametros:u_Decoder_Parametros"
+set_global_assignment -name LL_ENABLED ON -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_RESERVED OFF -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_instance_assignment -name LL_MEMBER_OF "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH" -to "Medipix_Bridge:u_Medipix_Bridge|Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH" -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_HEIGHT 6 -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_WIDTH 9 -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_ORIGIN X14_Y29 -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_STATE LOCKED -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_ENABLED ON -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_RESERVED OFF -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_instance_assignment -name LL_MEMBER_OF "Rx_Data_Medipix:u_Rx_Data_Medipix" -to "Rx_Data_Medipix:u_Rx_Data_Medipix" -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_HEIGHT 8 -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_WIDTH 7 -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_ORIGIN X53_Y1 -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_STATE LOCKED -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name MISC_FILE "D:/ARQ/Prototipo_Medipix/Projeto/3_Terceira_fase_IMG/Medipix_0/Medipix_prj.dpf"
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to Data_in_Mdpx[0] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to Data_in_Mdpx[1] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to Data_in_Mdpx[2] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to Data_in_Mdpx[3] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to Data_in_Mdpx[4] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to Data_in_Mdpx[5] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to Data_in_Mdpx[6] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to Data_in_Mdpx[7] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to Data_out_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to En_in_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to En_out_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to Data_in_Mdpx[0] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to Data_in_Mdpx[1] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to Data_in_Mdpx[2] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to Data_in_Mdpx[3] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to Data_in_Mdpx[4] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to Data_in_Mdpx[5] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to Data_in_Mdpx[6] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to Data_in_Mdpx[7] -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to Data_out_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to En_in_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to En_out_Mdpx -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=13" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=13" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=00000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=65" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=60529" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=54768" -section_id auto_signaltap_3

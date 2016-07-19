@@ -1,0 +1,5 @@
+PLL_Name	cpu_pll:u_cpu_pll|altpll:altpll_component|cpu_pll_altpll:auto_generated|pll1
+PLLJITTER	31
+PLLSPEmax	84
+PLLSPEmin	-53
+

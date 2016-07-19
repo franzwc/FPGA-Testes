@@ -1,0 +1,170 @@
+<sld_project_info>
+  <hub_info ir_width="8" node_count="1"/>
+  <node_info>
+    <node hpath="sld_signaltap:auto_signaltap_0" instance_id="0" mfg_id="110" node_id="0" sld_node_info="0x30006E00" version="6">
+      <parameters>
+        <parameter name="lpm_type" type="string" value="sld_signaltap"/>
+        <parameter name="sld_node_info" type="unknown" value="805334528"/>
+        <parameter name="SLD_IP_VERSION" type="dec" value="6"/>
+        <parameter name="SLD_IP_MINOR_VERSION" type="dec" value="0"/>
+        <parameter name="SLD_COMMON_IP_VERSION" type="dec" value="0"/>
+        <parameter name="sld_data_bits" type="unknown" value="55"/>
+        <parameter name="sld_trigger_bits" type="unknown" value="55"/>
+        <parameter name="SLD_NODE_CRC_BITS" type="dec" value="32"/>
+        <parameter name="sld_node_crc_hiword" type="unknown" value="18295"/>
+        <parameter name="sld_node_crc_loword" type="unknown" value="18728"/>
+        <parameter name="SLD_INCREMENTAL_ROUTING" type="dec" value="0"/>
+        <parameter name="sld_sample_depth" type="unknown" value="2048"/>
+        <parameter name="sld_segment_size" type="unknown" value="2048"/>
+        <parameter name="SLD_RAM_BLOCK_TYPE" type="string" value="AUTO"/>
+        <parameter name="sld_state_bits" type="unknown" value="11"/>
+        <parameter name="sld_buffer_full_stop" type="unknown" value="1"/>
+        <parameter name="SLD_MEM_ADDRESS_BITS" type="dec" value="7"/>
+        <parameter name="SLD_DATA_BIT_CNTR_BITS" type="dec" value="4"/>
+        <parameter name="sld_trigger_level" type="unknown" value="1"/>
+        <parameter name="sld_trigger_in_enabled" type="unknown" value="0"/>
+        <parameter name="sld_advanced_trigger_entity" type="unknown" value="basic,1,"/>
+        <parameter name="sld_trigger_level_pipeline" type="unknown" value="1"/>
+        <parameter name="sld_enable_advanced_trigger" type="unknown" value="0"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_1" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_2" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_3" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_4" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_5" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_6" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_7" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_8" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_9" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_10" type="string" value="NONE"/>
+        <parameter name="sld_inversion_mask_length" type="unknown" value="190"/>
+        <parameter name="sld_inversion_mask" type="unknown" value="0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
+        <parameter name="sld_power_up_trigger" type="unknown" value="0"/>
+        <parameter name="SLD_STATE_FLOW_MGR_ENTITY" type="string" value="state_flow_mgr_entity.vhd"/>
+        <parameter name="sld_state_flow_use_generated" type="unknown" value="0"/>
+        <parameter name="sld_current_resource_width" type="unknown" value="1"/>
+        <parameter name="sld_attribute_mem_mode" type="unknown" value="OFF"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_BITS" type="dec" value="1"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_GAP_RECORD" type="dec" value="0"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_MODE" type="string" value="OFF"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_ENABLE_ADVANCED_CONDITION" type="dec" value="0"/>
+        <parameter name="sld_storage_qualifier_inversion_mask_length" type="unknown" value="0"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_ADVANCED_CONDITION_ENTITY" type="string" value="basic"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_PIPELINE" type="dec" value="0"/>
+      </parameters>
+      <inputs>
+        <port name="acq_trigger_in[0]" source="Eth_TxCtl"/>
+        <port name="acq_data_in[0]" source="Eth_TxCtl"/>
+        <port name="acq_trigger_in[1]" source="Eth_Txd[0]"/>
+        <port name="acq_data_in[1]" source="Eth_Txd[0]"/>
+        <port name="acq_trigger_in[2]" source="Eth_Txd[1]"/>
+        <port name="acq_data_in[2]" source="Eth_Txd[1]"/>
+        <port name="acq_trigger_in[3]" source="Eth_Txd[2]"/>
+        <port name="acq_data_in[3]" source="Eth_Txd[2]"/>
+        <port name="acq_trigger_in[4]" source="Eth_Txd[3]"/>
+        <port name="acq_data_in[4]" source="Eth_Txd[3]"/>
+        <port name="acq_trigger_in[5]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_BtsComp"/>
+        <port name="acq_data_in[5]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_BtsComp"/>
+        <port name="acq_trigger_in[6]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[0]"/>
+        <port name="acq_data_in[6]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[0]"/>
+        <port name="acq_trigger_in[7]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[10]"/>
+        <port name="acq_data_in[7]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[10]"/>
+        <port name="acq_trigger_in[8]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[11]"/>
+        <port name="acq_data_in[8]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[11]"/>
+        <port name="acq_trigger_in[9]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[12]"/>
+        <port name="acq_data_in[9]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[12]"/>
+        <port name="acq_trigger_in[10]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[13]"/>
+        <port name="acq_data_in[10]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[13]"/>
+        <port name="acq_trigger_in[11]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[14]"/>
+        <port name="acq_data_in[11]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[14]"/>
+        <port name="acq_trigger_in[12]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[15]"/>
+        <port name="acq_data_in[12]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[15]"/>
+        <port name="acq_trigger_in[13]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[16]"/>
+        <port name="acq_data_in[13]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[16]"/>
+        <port name="acq_trigger_in[14]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[17]"/>
+        <port name="acq_data_in[14]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[17]"/>
+        <port name="acq_trigger_in[15]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[18]"/>
+        <port name="acq_data_in[15]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[18]"/>
+        <port name="acq_trigger_in[16]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[19]"/>
+        <port name="acq_data_in[16]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[19]"/>
+        <port name="acq_trigger_in[17]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[1]"/>
+        <port name="acq_data_in[17]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[1]"/>
+        <port name="acq_trigger_in[18]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[20]"/>
+        <port name="acq_data_in[18]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[20]"/>
+        <port name="acq_trigger_in[19]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[21]"/>
+        <port name="acq_data_in[19]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[21]"/>
+        <port name="acq_trigger_in[20]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[22]"/>
+        <port name="acq_data_in[20]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[22]"/>
+        <port name="acq_trigger_in[21]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[23]"/>
+        <port name="acq_data_in[21]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[23]"/>
+        <port name="acq_trigger_in[22]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[24]"/>
+        <port name="acq_data_in[22]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[24]"/>
+        <port name="acq_trigger_in[23]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[25]"/>
+        <port name="acq_data_in[23]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[25]"/>
+        <port name="acq_trigger_in[24]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[26]"/>
+        <port name="acq_data_in[24]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[26]"/>
+        <port name="acq_trigger_in[25]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[27]"/>
+        <port name="acq_data_in[25]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[27]"/>
+        <port name="acq_trigger_in[26]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[28]"/>
+        <port name="acq_data_in[26]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[28]"/>
+        <port name="acq_trigger_in[27]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[29]"/>
+        <port name="acq_data_in[27]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[29]"/>
+        <port name="acq_trigger_in[28]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[2]"/>
+        <port name="acq_data_in[28]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[2]"/>
+        <port name="acq_trigger_in[29]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[30]"/>
+        <port name="acq_data_in[29]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[30]"/>
+        <port name="acq_trigger_in[30]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[31]"/>
+        <port name="acq_data_in[30]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[31]"/>
+        <port name="acq_trigger_in[31]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[3]"/>
+        <port name="acq_data_in[31]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[3]"/>
+        <port name="acq_trigger_in[32]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[4]"/>
+        <port name="acq_data_in[32]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[4]"/>
+        <port name="acq_trigger_in[33]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[5]"/>
+        <port name="acq_data_in[33]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[5]"/>
+        <port name="acq_trigger_in[34]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[6]"/>
+        <port name="acq_data_in[34]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[6]"/>
+        <port name="acq_trigger_in[35]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[7]"/>
+        <port name="acq_data_in[35]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[7]"/>
+        <port name="acq_trigger_in[36]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[8]"/>
+        <port name="acq_data_in[36]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[8]"/>
+        <port name="acq_trigger_in[37]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[9]"/>
+        <port name="acq_data_in[37]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[9]"/>
+        <port name="acq_trigger_in[38]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[0]"/>
+        <port name="acq_data_in[38]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[0]"/>
+        <port name="acq_trigger_in[39]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[1]"/>
+        <port name="acq_data_in[39]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[1]"/>
+        <port name="acq_trigger_in[40]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[2]"/>
+        <port name="acq_data_in[40]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[2]"/>
+        <port name="acq_trigger_in[41]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[3]"/>
+        <port name="acq_data_in[41]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[3]"/>
+        <port name="acq_trigger_in[42]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[4]"/>
+        <port name="acq_data_in[42]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[4]"/>
+        <port name="acq_trigger_in[43]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[5]"/>
+        <port name="acq_data_in[43]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[5]"/>
+        <port name="acq_trigger_in[44]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[0]"/>
+        <port name="acq_data_in[44]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[0]"/>
+        <port name="acq_trigger_in[45]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[1]"/>
+        <port name="acq_data_in[45]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[1]"/>
+        <port name="acq_trigger_in[46]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[2]"/>
+        <port name="acq_data_in[46]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[2]"/>
+        <port name="acq_trigger_in[47]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[3]"/>
+        <port name="acq_data_in[47]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[3]"/>
+        <port name="acq_trigger_in[48]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[4]"/>
+        <port name="acq_data_in[48]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[4]"/>
+        <port name="acq_trigger_in[49]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[5]"/>
+        <port name="acq_data_in[49]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[5]"/>
+        <port name="acq_trigger_in[50]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[6]"/>
+        <port name="acq_data_in[50]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[6]"/>
+        <port name="acq_trigger_in[51]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[7]"/>
+        <port name="acq_data_in[51]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[7]"/>
+        <port name="acq_trigger_in[52]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_HeaderReady"/>
+        <port name="acq_data_in[52]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_HeaderReady"/>
+        <port name="acq_trigger_in[53]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Valid"/>
+        <port name="acq_data_in[53]" source="TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Valid"/>
+        <port name="acq_clk" source="Top_pll:u_Top_pll|c0"/>
+        <port name="acq_trigger_in[54]" source="reset:u_reset|o_reset"/>
+        <port name="acq_data_in[54]" source="reset:u_reset|o_reset"/>
+      </inputs>
+      <outputs/>
+    </node>
+  </node_info>
+</sld_project_info>

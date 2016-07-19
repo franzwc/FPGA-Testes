@@ -1,0 +1,263 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 10.0 Build 262 08/18/2010 Service Pack 1 SJ Full Version
+# Date created = 10:58:23  November 29, 2013
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Medipix_prj_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE75F23C8
+set_global_assignment -name TOP_LEVEL_ENTITY Top_Medipix
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "10.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:58:23  NOVEMBER 29, 2013"
+set_global_assignment -name LAST_QUARTUS_VERSION "10.0 SP1"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 8
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name INCREMENTAL_COMPILATION OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA OFF
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS OFF
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING OFF
+set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING OFF
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DCLK_AFTER_CONFIGURATION "USE AS REGULAR IO"
+
+set_location_assignment PIN_A12 -to Clk125
+set_location_assignment PIN_B12 -to Clk25
+
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Clk25
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Clk125
+
+
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS128
+set_global_assignment -name OUTPUT_IO_TIMING_ENDPOINT "NEAR END"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name MISC_FILE "C:/Users/franz.couto/Desktop/Prototipo_Medipix/Projeto/Medipix_0/Medipix_prj.dpf"
+set_global_assignment -name RESERVE_OTHER_AP_PINS_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_instance_assignment -name IO_STANDARD LVDS -to En_in_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Clk_in_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Clk_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Cont_sel_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[7]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[6]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[5]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[4]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[3]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[2]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[1]
+set_instance_assignment -name IO_STANDARD LVDS -to Data_in_Mdpx[0]
+set_location_assignment PIN_AA12 -to Clk_in_Mdpx
+set_location_assignment PIN_AA13 -to En_in_Mdpx
+set_location_assignment PIN_AA15 -to Data_in_Mdpx[0]
+set_location_assignment PIN_AA14 -to Data_in_Mdpx[1]
+set_location_assignment PIN_AA8 -to Data_in_Mdpx[2]
+set_location_assignment PIN_W13 -to Data_in_Mdpx[3]
+set_location_assignment PIN_AA9 -to Data_in_Mdpx[4]
+set_location_assignment PIN_AA11 -to Data_in_Mdpx[5]
+set_location_assignment PIN_AA10 -to Data_in_Mdpx[6]
+set_location_assignment PIN_W10 -to Data_in_Mdpx[7]
+set_location_assignment PIN_N2 -to Clk_out_Mdpx
+set_location_assignment PIN_V2 -to Cont_sel_out_Mdpx
+set_location_assignment PIN_M2 -to En_out_Mdpx
+set_instance_assignment -name IO_STANDARD "2.5 V" -to En_out_Mdpx
+set_location_assignment PIN_P4 -to Reset_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Reset_out_Mdpx
+set_location_assignment PIN_U2 -to Shutter_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to Shutter_out_Mdpx
+set_location_assignment PIN_AB12 -to "Clk_in_Mdpx(n)"
+set_location_assignment PIN_P3 -to "Reset_out_Mdpx(n)"
+set_location_assignment PIN_U1 -to "Shutter_out_Mdpx(n)"
+set_location_assignment PIN_AB13 -to "En_in_Mdpx(n)"
+set_location_assignment PIN_M1 -to "En_out_Mdpx(n)"
+set_location_assignment PIN_N1 -to "Clk_out_Mdpx(n)"
+set_location_assignment PIN_V1 -to "Cont_sel_out_Mdpx(n)"
+set_location_assignment PIN_L6 -to Data_out_Mdpx
+set_location_assignment PIN_AB15 -to "Data_in_Mdpx[0](n)"
+set_location_assignment PIN_AB14 -to "Data_in_Mdpx[1](n)"
+set_location_assignment PIN_AB8 -to "Data_in_Mdpx[2](n)"
+set_location_assignment PIN_Y13 -to "Data_in_Mdpx[3](n)"
+set_location_assignment PIN_AB9 -to "Data_in_Mdpx[4](n)"
+set_location_assignment PIN_AB11 -to "Data_in_Mdpx[5](n)"
+set_location_assignment PIN_AB10 -to "Data_in_Mdpx[6](n)"
+set_location_assignment PIN_Y10 -to "Data_in_Mdpx[7](n)"
+set_location_assignment PIN_R2 -to MtxClr_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to MtxClr_out_Mdpx
+set_location_assignment PIN_P2 -to TPSWT_out_Mdpx
+set_instance_assignment -name IO_STANDARD LVDS -to TPSWT_out_Mdpx
+set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to Clk_out_Mdpx
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to En_out_Mdpx
+set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to Clk_out_Mdpx
+set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to Clk_in_Mdpx
+set_location_assignment PIN_M6 -to "Data_out_Mdpx(n)"
+set_location_assignment PIN_R1 -to "MtxClr_out_Mdpx(n)"
+set_location_assignment PIN_P1 -to "TPSWT_out_Mdpx(n)"
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name LL_ENABLED ON -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_AUTO_SIZE ON -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_STATE FLOATING -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_RESERVED OFF -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_WIDTH 1 -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_HEIGHT 1 -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_ORIGIN X1_Y1 -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_instance_assignment -name LL_MEMBER_OF "Gera_Rajada_OMR:u_Gera_Rajada_OMR" -to "Medipix_Bridge:u_Medipix_Bridge|Gera_Rajada_OMR:u_Gera_Rajada_OMR" -section_id "Gera_Rajada_OMR:u_Gera_Rajada_OMR"
+set_global_assignment -name LL_ENABLED ON -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_AUTO_SIZE ON -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_STATE FLOATING -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_RESERVED OFF -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_WIDTH 1 -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_HEIGHT 1 -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_global_assignment -name LL_ORIGIN X1_Y1 -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_instance_assignment -name LL_MEMBER_OF "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC" -to "Medipix_Bridge:u_Medipix_Bridge|Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC" -section_id "Gera_Rajada_Read_DAC:u_Gera_Rajada_Read_DAC"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334531" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_3
+set_global_assignment -name LL_ENABLED ON -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_AUTO_SIZE ON -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_STATE FLOATING -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_RESERVED OFF -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_WIDTH 1 -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_HEIGHT 1 -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_ORIGIN X1_Y1 -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_instance_assignment -name LL_MEMBER_OF "Rx_Data_Medipix:u_Rx_Data_Medipix" -to "Rx_Data_Medipix:u_Rx_Data_Medipix" -section_id "Rx_Data_Medipix:u_Rx_Data_Medipix"
+set_global_assignment -name LL_ENABLED ON -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_AUTO_SIZE ON -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_STATE FLOATING -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_RESERVED OFF -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_WIDTH 1 -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_HEIGHT 1 -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name LL_ORIGIN X1_Y1 -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_instance_assignment -name LL_MEMBER_OF "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH" -to "Medipix_Bridge:u_Medipix_Bridge|Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH" -section_id "Gera_Rajada_Read_CounterH:u_Gera_Rajada_Read_CounterH"
+set_global_assignment -name MISC_FILE "C:/Users/franz.couto/Desktop/Prototipo_Medipix/Projeto/2_Segunda_fase_MDPXoIP/Medipix_0/Medipix_prj.dpf"
+set_global_assignment -name MISC_FILE "C:/Users/franz.couto/Desktop/Prototipo_Medipix/Projeto/enc_dec_flsr/Medipix_prj.dpf"
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=1024" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=1024" -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "cpu_pll:inst5|c1" -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to Clk25 -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to Data_out_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to Clk25 -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to Data_out_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to En_out_Mdpx -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to En_out_Mdpx -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=6" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=6" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=42" -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=55417" -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "Rst:inst10|Out_rst" -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "Rst:inst10|Out_rst" -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to entrada -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to um -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to entrada -section_id auto_signaltap_3
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to um -section_id auto_signaltap_3
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=20882" -section_id auto_signaltap_3
+set_global_assignment -name VERILOG_FILE Modules/m_Rx_Data_Medipix/Rx_Data_Medipix.v
+set_global_assignment -name VHDL_FILE Modules/m_Rx_Data_Medipix/Registra_Contagem.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Rx_Data_Medipix/Read_Input_Fifo.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Rx_Data_Medipix/Read_Counter_H.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Rx_Data_Medipix/Input_En.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Rx_Data_Medipix/Fifo_Write.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Rx_Data_Medipix/Data_Discriminate.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/PCK_CRC32_D4.vhd
+set_global_assignment -name VERILOG_FILE Modules/m_MedOIp/VHD/TSoIp_Bridge.v
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/teste_crc.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/PhyInterface.vhd
+set_global_assignment -name VERILOG_FILE Modules/m_MedOIp/VHD/myblkinv2.v
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/MuxPhyCtrl.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/MuxHdPactAddCRC.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/mux_crc.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/mac_header.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/CtrlWrTxTsOIP.vhd
+set_global_assignment -name VHDL_FILE Modules/m_MedOIp/VHD/CtrlRdTxTsOIp.vhd
+set_global_assignment -name VERILOG_FILE Modules/m_MedOIp/VHD/auk_udpipmac_ethernet_crc.v
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Select_Output.vhd
+set_global_assignment -name VERILOG_FILE Modules/m_Medipix_Bridge/Medipix_Bridge.v
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_Read_DAC.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_Read_CounterH.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_OMR.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_Load_DAC.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_Load_CTPR.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_Rajada_Load_CounterH.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Gera_M.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Decoder_Parametros.vhd
+set_global_assignment -name VHDL_FILE Modules/m_Medipix_Bridge/Decoder_Dacs.vhd
+set_global_assignment -name VHDL_FILE Modules/m_DAC_Bridge/DAC_Bridge.vhd
+set_global_assignment -name VHDL_FILE Modules/m_ADC_Bridge/ADC_Bridge.vhd
+set_global_assignment -name VERILOG_FILE Modules/m_Reset_Syncronize/Rst_Syncronizer.v
+set_global_assignment -name SDC_FILE medipix.sdc
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name QIP_FILE Modules/m_Cpu_PLL/cpu_pll.qip
+set_global_assignment -name VERILOG_FILE Modules/m_Reset_Syncronize/reset.v
+set_global_assignment -name VERILOG_FILE Top_Medipix.v

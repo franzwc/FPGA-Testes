@@ -1,0 +1,68 @@
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+library altera;
+use altera.altera_syn_attributes.all;
+
+entity Rx_Equalization is
+port (
+		-- Entradas
+		In_Clk  			  			 	: in std_logic;
+		In_Rst    						: in std_logic;
+		In_Eth_En  						: in std_logic;
+      In_Eth_Data               	: in std_logic_vector(3 downto 0);
+      -- Saidas
+      Out_Eth_En            		: out std_logic;
+      Out_Eth_Data	            : out std_logic_vector(3 downto 0) 
+);
+
+end Rx_Equalization;
+
+architecture Rx_Equalization_arq of Rx_Equalization is
+
+-- CONSTANTES
+constant DELAY	: natural	:= 100;
+-- TIPOS
+type Pipe_DELAYx11 is array (0 to DELAY-1) of std_logic_vector(4 downto 0);
+-- SINAIS
+signal sig_MacTx		: std_logic_vector(4 downto 0);
+signal reg_MacTx		: Pipe_DELAYx11;
+signal reg_MacTxEna	: std_logic;
+signal reg_MacTxData	: std_logic_vector(3 downto 0);
+
+begin
+
+-- CONCURRENT STATEMENTS
+-- Entrada do atrasador
+sig_MacTx	<= (In_Eth_En&In_Eth_Data);
+
+-- Saída do atrasador
+reg_MacTxEna	<= reg_MacTx(DELAY-1)(4);
+reg_MacTxData	<= reg_MacTx(DELAY-1)(3 downto 0);
+
+TxClk:
+process(In_Clk,In_Rst)
+
+begin
+	if (In_Rst='1') then
+		-- Saídas
+		Out_Eth_En   	<= '0';
+		Out_Eth_Data	<= (others=>'0');
+		-- Sinais
+		reg_MacTx		<= (others=>(others=>'0'));
+		
+	elsif rising_edge(in_TxClk) then
+		
+		-- Linha de atrado do sinal de entrada
+		reg_MacTx		<= sig_MacTx&(reg_MacTx(0 to DELAY-2));
+		
+		Out_Eth_En     <= reg_MacTxEna;
+		Out_Eth_Data	<= reg_MacTxData(3 downto 0);
+
+	end if;
+end process;
+
+end Rx_Equalization_arq;

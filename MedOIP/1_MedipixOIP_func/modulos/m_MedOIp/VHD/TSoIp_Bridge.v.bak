@@ -1,0 +1,159 @@
+/* Verilog HDL FILE
+--{{{ HEADER
+--!@file
+--------------------------------------------------------------------------------
+--!@brief TSoIp Top
+--------------------------------------------------------------------------------                                                                      
+--! DESCRIPTION:
+--!
+--! TS over Ethernet
+--!
+--! DETAILS:      
+--!
+--!- Project Name: TSoIp_Bridge.v                       
+--!- Module Name: TSoIp_Bridge
+--!- Tools: Quartus II 10.0  
+--!- Author: Franz Wagner
+--!- Company: HK LINEAR
+--!- Create Date: 24/07/2013     
+--!- Version: 1.0.0 (Jul/2013)  
+--------------------------------------------------------------------------------
+-- HKLINEAR - 2013
+--------------------------------------------------------------------------------
+--}}} Header*/
+
+module TSoIp_Bridge (
+
+          	 input                    i_Clk27,
+				 input                    i_nRst,
+				 input   [7:0]            i_Data_table_fnios,
+				 input                    i_Valid_table_fnios,
+				 input                    i_Sync_table_fnios,//dados vindos da web
+				 
+				 input   [7:0]            i_ts_Data, //asi
+				 input                    i_ts_Valid,
+				 input                    i_ts_Sync,
+				 
+				 input                    i_PhyTxClk,//clk da phy 25mhz
+				 
+				 
+				 //saidas
+				 output                   o_PhyTxEna,
+				 output   [3:0]           o_PhyTxData
+
+);
+
+
+   //--------------------------------------------------------------------------------------------
+	// Pega os parametros da web e entrega ao modulo 
+	//--------------------------------------------------------------------------------------------
+	wire              CtrlPhy;
+   wire   [7:0]      i_Protocol;
+	wire   [7:0]      i_TimeToLive;
+   wire   [7:0]      i_NumberPacket;
+   wire  [31:0]      i_IpSource;
+   wire  [47:0]      i_MacSource;
+   wire  [15:0]      i_PortSource;
+   wire  [31:0]      i_IpDest;
+   wire  [47:0]      i_MacDest;
+   wire  [15:0]      i_PortDest;
+	
+   ReaderTableConfigIP u_ReaderTableConfigIP (
+
+	          .iClock                                  (i_Clk27),
+				 .iReset                                  (i_nRst),
+				 .iData                                   (i_Data_table_fnios),
+				 .iSync                                   (i_Sync_table_fnios),
+				 .iValid                                  (i_Valid_table_fnios),
+				 
+				 .out_CtrlPhy                             (CtrlPhy),
+				 .out_Protocol                            (i_Protocol[7:0]),
+				 .out_TimeToLive                          (i_TimeToLive[7:0]),
+				 .out_TsPackets                           (i_NumberPacket[7:0]),
+				 .out_IpSource                            (i_IpSource[31:0]),
+				 .out_MacSource                           (i_MacSource[47:0]),
+				 .out_PortSource                          (i_PortSource[15:0]),
+				 .out_IpDest                              (i_IpDest[31:0]),
+				 .out_MacDest                             (i_MacDest[47:0]),
+				 .out_PortDest                            (i_PortDest[15:0])
+				 
+			 		 
+	);
+	
+	//--------------------------------------------------------------------------------------------
+	// Extrai o tamanho do pacote
+	//--------------------------------------------------------------------------------------------
+	wire              bts_comp;
+   wire   [7:0]      pkt_length;
+	
+	pkt_length u_pkt_length (
+
+	          .i_Clk                                   (i_Clk27),
+				 .i_nRst                                  (i_nRst),
+				 .i_Valid                                 (i_ts_Valid),
+				 .i_Sync                                  (i_ts_Sync),
+				 
+				 .o_BTS                                   (bts_comp),
+				 .o_PktLength                             (pkt_length[7:0])
+			 		 
+	);
+	
+	//--------------------------------------------------------------------------------------------
+	// Passa pro modo Packet
+	//--------------------------------------------------------------------------------------------
+	wire              sync_asi_ip;
+   wire              valid_asi_ip;
+	wire   [7:0]      data_asi_ip;
+	
+	parameter WIDTH = 1;
+	
+	Top_ASIOutMode u_TopASIOutMode (
+
+	          .i_Clk4Mhz                               (i_Clk27),
+				 .i_nRst4Mhz                              (i_nRst),
+				 .i_Data                                  (i_ts_Data[7:0]),
+				 .i_Valid                                 (i_ts_Valid),
+				 .i_Sync                                  (i_ts_Sync),
+				 .i_Clk27Mhz                              (i_Clk27),
+				 .i_nRst27Mhz                             (i_nRst),
+				 .i_AsiMode                               (1'b0),
+				 .i_BtsComp                               (bts_comp),
+				 .i_ReqAlteraModo                         (1'b0),
+				 	  
+				 .o_Data                                  (data_asi_ip[7:0]),
+				 .o_Sync                                  (sync_asi_ip),
+				 .o_ValidOut                              (valid_asi_ip),
+				 .o_ContaByte                             (),
+				 .o_AsiMode                               ()
+			 		 
+	);
+	//--------------------------------------------------------------------------------------------
+	//modulo tsoverethernet
+	//--------------------------------------------------------------------------------------------
+	TOP_TSoIP u_TOP_TSoIP (
+
+	          .clk                                     (i_Clk27),
+				 .nRst                                    ((i_nRst | CtrlPhy)),
+				 .BTS_comp                                (bts_comp),
+				 .ClkPhy                                  (i_PhyTxClk),
+				 .i_ts_valid                              ((valid_asi_ip & CtrlPhy)),
+				 .i_ts_sync                               (valid_asi_ip),
+				 .i_ts_data                               (data_asi_ip[7:0]),
+				 .i_ts_PacketLength                       (pkt_length[7:0]),
+				 .i_MacDest                               (i_MacDest[47:0]),
+				 .i_MacSource                             (i_MacSource[47:0]),
+				 .i_IpDest                                (i_IpDest[31:0]),
+				 .i_IpSource                              (i_IpSource[31:0]),
+				 .i_Protocol                              (i_Protocol[7:0]),
+				 .i_PortDest                              (i_PortDest[15:0]),
+				 .i_PortSource                            (i_PortSource[15:0]),
+				 .i_TimeToLive                            (i_TimeToLive[7:0]),
+				 .i_NumberPacket                          (i_NumberPacket[2:0]),
+				 
+				 .PhytxEna                                (o_PhyTxEna),
+				 .PhytxData                               (o_PhyTxData[3:0])
+			 		 
+	);
+
+
+endmodule 

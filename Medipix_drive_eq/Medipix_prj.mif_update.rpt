@@ -1,0 +1,83 @@
+MIF/HEX Update report for Medipix_prj
+Thu Jul 24 12:50:33 2014
+Quartus II 64-Bit Version 10.0 Build 262 08/18/2010 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Thu Jul 24 12:50:33 2014 ;
+; Revision Name         ; Medipix_prj                           ;
+; Top-level Entity Name ; Top_Medipix                           ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE75F23C8                          ;
++-----------------------+---------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                                                 ;
++------------------------------------------------------------------------------------------------+
+; File Name                                                                                      ;
++------------------------------------------------------------------------------------------------+
+; D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_bht_ram.mif                 ;
+; D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_dc_tag_ram.mif              ;
+; D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_ic_tag_ram.mif              ;
+; D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_ociram_default_contents.mif ;
+; D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_rf_ram_a.mif                ;
+; D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_rf_ram_b.mif                ;
+; D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/epcs_controller_boot_rom.hex          ;
++------------------------------------------------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit MIF/HEX Update
+    Info: Version 10.0 Build 262 08/18/2010 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu Jul 24 12:50:30 2014
+Info: Command: quartus_cdb Medipix_prj -c Medipix_prj --update_mif
+Info: Processed the following Memory Initialization File(s)
+    Info: Processed Memory Initialization File D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_bht_ram.mif
+    Info: Processed Memory Initialization File D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_dc_tag_ram.mif
+    Info: Processed Memory Initialization File D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_ic_tag_ram.mif
+    Info: Processed Memory Initialization File D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_ociram_default_contents.mif
+    Info: Processed Memory Initialization File D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_rf_ram_a.mif
+    Info: Processed Memory Initialization File D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/cpu_linux_rf_ram_b.mif
+    Info: Processed Memory Initialization File D:/ARQ/Prototipo_Medipix/Projeto/Testes/Medipix_drive_eq/epcs_controller_boot_rom.hex
+Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 485 megabytes
+    Info: Processing ended: Thu Jul 24 12:50:33 2014
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

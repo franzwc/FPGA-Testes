@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Aug 22 16:27:20 2014
+Quartus II 64-Bit Version : 10.0 Build 262 08/18/2010 SP 1 SJ Full Version
+Revision Name : Medipix_prj
+Top-level Entity Name : Top_Medipix
+Family : Cyclone IV E
+Device : EP4CE75F23C8
+Timing Models : Final
+Total logic elements : 22,870 / 75,408 ( 30 % )
+    Total combinational functions : 19,258 / 75,408 ( 26 % )
+    Dedicated logic registers : 13,103 / 75,408 ( 17 % )
+Total registers : 13211
+Total pins : 114 / 293 ( 39 % )
+Total virtual pins : 0
+Total memory bits : 1,651,253 / 2,810,880 ( 59 % )
+Embedded Multiplier 9-bit elements : 4 / 400 ( 1 % )
+Total PLLs : 2 / 4 ( 50 % )

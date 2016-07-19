@@ -1,0 +1,560 @@
+<sld_project_info>
+  <hub_info ir_width="8" node_count="3"/>
+  <node_info>
+    <node hpath="Medipix_sopc:u_Medipix_sopc|cpu_linux:the_cpu_linux|cpu_linux_nios2_oci:the_cpu_linux_nios2_oci|cpu_linux_jtag_debug_module_wrapper:the_cpu_linux_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_linux_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="0" mfg_id="70" node_id="34" sld_node_info="0x19104600" version="3">
+      <parameters>
+        <parameter name="sld_mfg_id" type="dec" value="70"/>
+        <parameter name="sld_type_id" type="dec" value="34"/>
+        <parameter name="sld_version" type="dec" value="3"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_ir_width" type="dec" value="2"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="420496896"/>
+      </parameters>
+      <inputs>
+        <port name="usr_tdo" source="Medipix_sopc:u_Medipix_sopc|cpu_linux:the_cpu_linux|cpu_linux_nios2_oci:the_cpu_linux_nios2_oci|cpu_linux_jtag_debug_module_wrapper:the_cpu_linux_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_linux_jtag_debug_module_phy|tdo"/>
+        <port name="usr_ir_out[0]" source="Medipix_sopc:u_Medipix_sopc|cpu_linux:the_cpu_linux|cpu_linux_nios2_oci:the_cpu_linux_nios2_oci|cpu_linux_jtag_debug_module_wrapper:the_cpu_linux_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_linux_jtag_debug_module_phy|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="Medipix_sopc:u_Medipix_sopc|cpu_linux:the_cpu_linux|cpu_linux_nios2_oci:the_cpu_linux_nios2_oci|cpu_linux_jtag_debug_module_wrapper:the_cpu_linux_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_linux_jtag_debug_module_phy|ir_out[1]"/>
+        <port name="raw_tck" source="altera_internal_jtag"/>
+        <port name="raw_tms" source="altera_internal_jtag"/>
+        <port name="tdi" source="altera_internal_jtag"/>
+        <port name="jtag_state_tlr" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[0]"/>
+        <port name="jtag_state_rti" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[1]"/>
+        <port name="jtag_state_sdrs" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[2]"/>
+        <port name="jtag_state_cdr" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[3]"/>
+        <port name="jtag_state_sdr" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[4]"/>
+        <port name="jtag_state_e1dr" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[5]"/>
+        <port name="jtag_state_pdr" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[6]"/>
+        <port name="jtag_state_e2dr" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[7]"/>
+        <port name="jtag_state_udr" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[8]"/>
+        <port name="jtag_state_sirs" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[9]"/>
+        <port name="jtag_state_cir" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[10]"/>
+        <port name="jtag_state_sir" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[11]"/>
+        <port name="jtag_state_e1ir" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[12]"/>
+        <port name="jtag_state_pir" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[13]"/>
+        <port name="jtag_state_e2ir" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[14]"/>
+        <port name="jtag_state_uir" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[15]"/>
+        <port name="usr1" source="sld_hub:auto_hub|virtual_ir_scan_reg"/>
+        <port name="clr" source="sld_hub:auto_hub|node_clr"/>
+        <port name="ena" source="sld_hub:auto_hub|node_ena[1]~reg0"/>
+        <port name="ir_in[0]" source="sld_hub:auto_hub|irf_reg[1][0]"/>
+        <port name="ir_in[1]" source="sld_hub:auto_hub|irf_reg[1][1]"/>
+      </inputs>
+      <outputs>
+        <port name="usr_tck"/>
+        <port name="usr_tdi"/>
+        <port name="usr_ir_in[0]"/>
+        <port name="usr_ir_in[1]"/>
+        <port name="usr_virtual_state_cdr"/>
+        <port name="usr_virtual_state_sdr"/>
+        <port name="usr_virtual_state_e1dr"/>
+        <port name="usr_virtual_state_pdr"/>
+        <port name="usr_virtual_state_e2dr"/>
+        <port name="usr_virtual_state_udr"/>
+        <port name="usr_virtual_state_cir"/>
+        <port name="usr_virtual_state_uir"/>
+        <port name="usr_tms"/>
+        <port name="usr_jtag_state_tlr"/>
+        <port name="usr_jtag_state_rti"/>
+        <port name="usr_jtag_state_sdrs"/>
+        <port name="usr_jtag_state_cdr"/>
+        <port name="usr_jtag_state_sdr"/>
+        <port name="usr_jtag_state_e1dr"/>
+        <port name="usr_jtag_state_pdr"/>
+        <port name="usr_jtag_state_e2dr"/>
+        <port name="usr_jtag_state_udr"/>
+        <port name="usr_jtag_state_sirs"/>
+        <port name="usr_jtag_state_cir"/>
+        <port name="usr_jtag_state_sir"/>
+        <port name="usr_jtag_state_e1ir"/>
+        <port name="usr_jtag_state_pir"/>
+        <port name="usr_jtag_state_e2ir"/>
+        <port name="usr_jtag_state_uir"/>
+        <port name="tdo"/>
+        <port name="ir_out[0]"/>
+        <port name="ir_out[0]"/>
+        <port name="ir_out[1]"/>
+        <port name="ir_out[1]"/>
+      </outputs>
+    </node>
+    <node hpath="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic" instance_id="0" mfg_id="110" node_id="128" sld_node_info="0xC006E00" version="1">
+      <parameters>
+        <parameter name="INSTANCE_ID" type="dec" value="0"/>
+        <parameter name="SLD_NODE_INFO" type="ubin" value="00001100000000000110111000000000"/>
+        <parameter name="SLD_AUTO_INSTANCE_INDEX" type="string" value="YES"/>
+        <parameter name="LOG2_TXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="LOG2_RXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="RESERVED" type="dec" value="0"/>
+        <parameter name="DATA_WIDTH" type="dec" value="8"/>
+        <parameter name="NODE_IR_WIDTH" type="dec" value="1"/>
+        <parameter name="SCAN_LENGTH" type="dec" value="11"/>
+      </parameters>
+      <inputs>
+        <port name="raw_tck" source="altera_internal_jtag"/>
+        <port name="tck" source="altera_internal_jtag"/>
+        <port name="tdi" source="altera_internal_jtag"/>
+        <port name="rti" source="altera_internal_jtag"/>
+        <port name="shift" source="altera_internal_jtag"/>
+        <port name="update" source="altera_internal_jtag"/>
+        <port name="usr1" source="sld_hub:auto_hub|virtual_ir_scan_reg"/>
+        <port name="clr" source="sld_hub:auto_hub|node_clr"/>
+        <port name="ena" source="sld_hub:auto_hub|node_ena[2]~reg0"/>
+        <port name="ir_in[0]" source="sld_hub:auto_hub|irf_reg[2][0]"/>
+        <port name="jtag_state_cdr" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[3]"/>
+        <port name="jtag_state_sdr" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[4]"/>
+        <port name="jtag_state_udr" source="sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[8]"/>
+        <port name="clk" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|clk"/>
+        <port name="rst_n" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|rst_n"/>
+        <port name="r_val" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|r_val"/>
+        <port name="r_dat[0]" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|r_dat[0]"/>
+        <port name="r_dat[1]" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|r_dat[1]"/>
+        <port name="r_dat[2]" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|r_dat[2]"/>
+        <port name="r_dat[3]" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|r_dat[3]"/>
+        <port name="r_dat[4]" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|r_dat[4]"/>
+        <port name="r_dat[5]" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|r_dat[5]"/>
+        <port name="r_dat[6]" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|r_dat[6]"/>
+        <port name="r_dat[7]" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|r_dat[7]"/>
+        <port name="t_dav" source="Medipix_sopc:u_Medipix_sopc|jtag_uart_0:the_jtag_uart_0|t_dav"/>
+      </inputs>
+      <outputs>
+        <port name="tdo"/>
+        <port name="irq"/>
+        <port name="ir_out[0]"/>
+        <port name="ir_out[0]"/>
+        <port name="r_ena"/>
+        <port name="r_ena"/>
+        <port name="t_ena"/>
+        <port name="t_ena"/>
+        <port name="t_dat[0]"/>
+        <port name="t_dat[1]"/>
+        <port name="t_dat[2]"/>
+        <port name="t_dat[3]"/>
+        <port name="t_dat[4]"/>
+        <port name="t_dat[5]"/>
+        <port name="t_dat[6]"/>
+        <port name="t_dat[7]"/>
+        <port name="t_pause"/>
+        <port name="t_pause"/>
+      </outputs>
+    </node>
+    <node hpath="sld_signaltap:auto_signaltap_3" instance_id="3" mfg_id="110" node_id="0" sld_node_info="0x30006E03" version="6">
+      <parameters>
+        <parameter name="lpm_type" type="string" value="sld_signaltap"/>
+        <parameter name="sld_node_info" type="unknown" value="805334531"/>
+        <parameter name="SLD_IP_VERSION" type="dec" value="6"/>
+        <parameter name="SLD_IP_MINOR_VERSION" type="dec" value="0"/>
+        <parameter name="SLD_COMMON_IP_VERSION" type="dec" value="0"/>
+        <parameter name="sld_data_bits" type="unknown" value="182"/>
+        <parameter name="sld_trigger_bits" type="unknown" value="182"/>
+        <parameter name="SLD_NODE_CRC_BITS" type="dec" value="32"/>
+        <parameter name="sld_node_crc_hiword" type="unknown" value="25425"/>
+        <parameter name="sld_node_crc_loword" type="unknown" value="59638"/>
+        <parameter name="SLD_INCREMENTAL_ROUTING" type="dec" value="0"/>
+        <parameter name="sld_sample_depth" type="unknown" value="4096"/>
+        <parameter name="sld_segment_size" type="unknown" value="4096"/>
+        <parameter name="SLD_RAM_BLOCK_TYPE" type="string" value="AUTO"/>
+        <parameter name="sld_state_bits" type="unknown" value="11"/>
+        <parameter name="sld_buffer_full_stop" type="unknown" value="1"/>
+        <parameter name="SLD_MEM_ADDRESS_BITS" type="dec" value="7"/>
+        <parameter name="SLD_DATA_BIT_CNTR_BITS" type="dec" value="4"/>
+        <parameter name="sld_trigger_level" type="unknown" value="1"/>
+        <parameter name="sld_trigger_in_enabled" type="unknown" value="0"/>
+        <parameter name="sld_advanced_trigger_entity" type="unknown" value="basic,1,"/>
+        <parameter name="sld_trigger_level_pipeline" type="unknown" value="1"/>
+        <parameter name="sld_enable_advanced_trigger" type="unknown" value="0"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_1" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_2" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_3" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_4" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_5" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_6" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_7" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_8" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_9" type="string" value="NONE"/>
+        <parameter name="SLD_ADVANCED_TRIGGER_10" type="string" value="NONE"/>
+        <parameter name="sld_inversion_mask_length" type="unknown" value="572"/>
+        <parameter name="sld_inversion_mask" type="unknown" value="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
+        <parameter name="sld_power_up_trigger" type="unknown" value="0"/>
+        <parameter name="SLD_STATE_FLOW_MGR_ENTITY" type="string" value="state_flow_mgr_entity.vhd"/>
+        <parameter name="sld_state_flow_use_generated" type="unknown" value="0"/>
+        <parameter name="sld_current_resource_width" type="unknown" value="1"/>
+        <parameter name="sld_attribute_mem_mode" type="unknown" value="OFF"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_BITS" type="dec" value="1"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_GAP_RECORD" type="dec" value="0"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_MODE" type="string" value="OFF"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_ENABLE_ADVANCED_CONDITION" type="dec" value="0"/>
+        <parameter name="sld_storage_qualifier_inversion_mask_length" type="unknown" value="0"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_ADVANCED_CONDITION_ENTITY" type="string" value="basic"/>
+        <parameter name="SLD_STORAGE_QUALIFIER_PIPELINE" type="dec" value="0"/>
+      </parameters>
+      <inputs>
+        <port name="acq_trigger_in[0]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[0]"/>
+        <port name="acq_data_in[0]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[0]"/>
+        <port name="acq_trigger_in[1]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[1]"/>
+        <port name="acq_data_in[1]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[1]"/>
+        <port name="acq_trigger_in[2]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[2]"/>
+        <port name="acq_data_in[2]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[2]"/>
+        <port name="acq_trigger_in[3]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[3]"/>
+        <port name="acq_data_in[3]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[3]"/>
+        <port name="acq_trigger_in[4]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[4]"/>
+        <port name="acq_data_in[4]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[4]"/>
+        <port name="acq_trigger_in[5]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[5]"/>
+        <port name="acq_data_in[5]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[5]"/>
+        <port name="acq_trigger_in[6]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[6]"/>
+        <port name="acq_data_in[6]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[6]"/>
+        <port name="acq_trigger_in[7]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[7]"/>
+        <port name="acq_data_in[7]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_Data_nios[7]"/>
+        <port name="acq_trigger_in[8]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_En_nios"/>
+        <port name="acq_data_in[8]" source="Decoder_IP_TX:u_Decoder_IP_TX|In_En_nios"/>
+        <port name="acq_trigger_in[9]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[0]"/>
+        <port name="acq_data_in[9]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[0]"/>
+        <port name="acq_trigger_in[10]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[10]"/>
+        <port name="acq_data_in[10]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[10]"/>
+        <port name="acq_trigger_in[11]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[11]"/>
+        <port name="acq_data_in[11]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[11]"/>
+        <port name="acq_trigger_in[12]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[12]"/>
+        <port name="acq_data_in[12]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[12]"/>
+        <port name="acq_trigger_in[13]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[13]"/>
+        <port name="acq_data_in[13]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[13]"/>
+        <port name="acq_trigger_in[14]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[14]"/>
+        <port name="acq_data_in[14]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[14]"/>
+        <port name="acq_trigger_in[15]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[15]"/>
+        <port name="acq_data_in[15]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[15]"/>
+        <port name="acq_trigger_in[16]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[16]"/>
+        <port name="acq_data_in[16]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[16]"/>
+        <port name="acq_trigger_in[17]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[17]"/>
+        <port name="acq_data_in[17]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[17]"/>
+        <port name="acq_trigger_in[18]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[18]"/>
+        <port name="acq_data_in[18]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[18]"/>
+        <port name="acq_trigger_in[19]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[19]"/>
+        <port name="acq_data_in[19]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[19]"/>
+        <port name="acq_trigger_in[20]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[1]"/>
+        <port name="acq_data_in[20]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[1]"/>
+        <port name="acq_trigger_in[21]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[20]"/>
+        <port name="acq_data_in[21]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[20]"/>
+        <port name="acq_trigger_in[22]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[21]"/>
+        <port name="acq_data_in[22]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[21]"/>
+        <port name="acq_trigger_in[23]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[22]"/>
+        <port name="acq_data_in[23]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[22]"/>
+        <port name="acq_trigger_in[24]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[23]"/>
+        <port name="acq_data_in[24]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[23]"/>
+        <port name="acq_trigger_in[25]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[24]"/>
+        <port name="acq_data_in[25]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[24]"/>
+        <port name="acq_trigger_in[26]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[25]"/>
+        <port name="acq_data_in[26]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[25]"/>
+        <port name="acq_trigger_in[27]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[26]"/>
+        <port name="acq_data_in[27]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[26]"/>
+        <port name="acq_trigger_in[28]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[27]"/>
+        <port name="acq_data_in[28]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[27]"/>
+        <port name="acq_trigger_in[29]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[28]"/>
+        <port name="acq_data_in[29]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[28]"/>
+        <port name="acq_trigger_in[30]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[29]"/>
+        <port name="acq_data_in[30]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[29]"/>
+        <port name="acq_trigger_in[31]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[2]"/>
+        <port name="acq_data_in[31]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[2]"/>
+        <port name="acq_trigger_in[32]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[30]"/>
+        <port name="acq_data_in[32]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[30]"/>
+        <port name="acq_trigger_in[33]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[31]"/>
+        <port name="acq_data_in[33]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[31]"/>
+        <port name="acq_trigger_in[34]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[3]"/>
+        <port name="acq_data_in[34]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[3]"/>
+        <port name="acq_trigger_in[35]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[4]"/>
+        <port name="acq_data_in[35]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[4]"/>
+        <port name="acq_trigger_in[36]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[5]"/>
+        <port name="acq_data_in[36]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[5]"/>
+        <port name="acq_trigger_in[37]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[6]"/>
+        <port name="acq_data_in[37]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[6]"/>
+        <port name="acq_trigger_in[38]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[7]"/>
+        <port name="acq_data_in[38]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[7]"/>
+        <port name="acq_trigger_in[39]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[8]"/>
+        <port name="acq_data_in[39]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[8]"/>
+        <port name="acq_trigger_in[40]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[9]"/>
+        <port name="acq_data_in[40]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_IP[9]"/>
+        <port name="acq_trigger_in[41]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[0]"/>
+        <port name="acq_data_in[41]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[0]"/>
+        <port name="acq_trigger_in[42]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[10]"/>
+        <port name="acq_data_in[42]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[10]"/>
+        <port name="acq_trigger_in[43]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[11]"/>
+        <port name="acq_data_in[43]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[11]"/>
+        <port name="acq_trigger_in[44]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[12]"/>
+        <port name="acq_data_in[44]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[12]"/>
+        <port name="acq_trigger_in[45]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[13]"/>
+        <port name="acq_data_in[45]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[13]"/>
+        <port name="acq_trigger_in[46]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[14]"/>
+        <port name="acq_data_in[46]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[14]"/>
+        <port name="acq_trigger_in[47]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[15]"/>
+        <port name="acq_data_in[47]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[15]"/>
+        <port name="acq_trigger_in[48]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[16]"/>
+        <port name="acq_data_in[48]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[16]"/>
+        <port name="acq_trigger_in[49]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[17]"/>
+        <port name="acq_data_in[49]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[17]"/>
+        <port name="acq_trigger_in[50]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[18]"/>
+        <port name="acq_data_in[50]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[18]"/>
+        <port name="acq_trigger_in[51]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[19]"/>
+        <port name="acq_data_in[51]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[19]"/>
+        <port name="acq_trigger_in[52]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[1]"/>
+        <port name="acq_data_in[52]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[1]"/>
+        <port name="acq_trigger_in[53]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[20]"/>
+        <port name="acq_data_in[53]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[20]"/>
+        <port name="acq_trigger_in[54]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[21]"/>
+        <port name="acq_data_in[54]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[21]"/>
+        <port name="acq_trigger_in[55]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[22]"/>
+        <port name="acq_data_in[55]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[22]"/>
+        <port name="acq_trigger_in[56]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[23]"/>
+        <port name="acq_data_in[56]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[23]"/>
+        <port name="acq_trigger_in[57]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[24]"/>
+        <port name="acq_data_in[57]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[24]"/>
+        <port name="acq_trigger_in[58]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[25]"/>
+        <port name="acq_data_in[58]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[25]"/>
+        <port name="acq_trigger_in[59]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[26]"/>
+        <port name="acq_data_in[59]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[26]"/>
+        <port name="acq_trigger_in[60]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[27]"/>
+        <port name="acq_data_in[60]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[27]"/>
+        <port name="acq_trigger_in[61]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[28]"/>
+        <port name="acq_data_in[61]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[28]"/>
+        <port name="acq_trigger_in[62]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[29]"/>
+        <port name="acq_data_in[62]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[29]"/>
+        <port name="acq_trigger_in[63]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[2]"/>
+        <port name="acq_data_in[63]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[2]"/>
+        <port name="acq_trigger_in[64]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[30]"/>
+        <port name="acq_data_in[64]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[30]"/>
+        <port name="acq_trigger_in[65]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[31]"/>
+        <port name="acq_data_in[65]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[31]"/>
+        <port name="acq_trigger_in[66]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[32]"/>
+        <port name="acq_data_in[66]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[32]"/>
+        <port name="acq_trigger_in[67]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[33]"/>
+        <port name="acq_data_in[67]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[33]"/>
+        <port name="acq_trigger_in[68]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[34]"/>
+        <port name="acq_data_in[68]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[34]"/>
+        <port name="acq_trigger_in[69]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[35]"/>
+        <port name="acq_data_in[69]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[35]"/>
+        <port name="acq_trigger_in[70]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[36]"/>
+        <port name="acq_data_in[70]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[36]"/>
+        <port name="acq_trigger_in[71]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[37]"/>
+        <port name="acq_data_in[71]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[37]"/>
+        <port name="acq_trigger_in[72]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[38]"/>
+        <port name="acq_data_in[72]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[38]"/>
+        <port name="acq_trigger_in[73]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[39]"/>
+        <port name="acq_data_in[73]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[39]"/>
+        <port name="acq_trigger_in[74]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[3]"/>
+        <port name="acq_data_in[74]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[3]"/>
+        <port name="acq_trigger_in[75]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[40]"/>
+        <port name="acq_data_in[75]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[40]"/>
+        <port name="acq_trigger_in[76]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[41]"/>
+        <port name="acq_data_in[76]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[41]"/>
+        <port name="acq_trigger_in[77]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[42]"/>
+        <port name="acq_data_in[77]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[42]"/>
+        <port name="acq_trigger_in[78]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[43]"/>
+        <port name="acq_data_in[78]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[43]"/>
+        <port name="acq_trigger_in[79]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[44]"/>
+        <port name="acq_data_in[79]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[44]"/>
+        <port name="acq_trigger_in[80]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[45]"/>
+        <port name="acq_data_in[80]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[45]"/>
+        <port name="acq_trigger_in[81]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[46]"/>
+        <port name="acq_data_in[81]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[46]"/>
+        <port name="acq_trigger_in[82]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[47]"/>
+        <port name="acq_data_in[82]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[47]"/>
+        <port name="acq_trigger_in[83]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[4]"/>
+        <port name="acq_data_in[83]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[4]"/>
+        <port name="acq_trigger_in[84]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[5]"/>
+        <port name="acq_data_in[84]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[5]"/>
+        <port name="acq_trigger_in[85]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[6]"/>
+        <port name="acq_data_in[85]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[6]"/>
+        <port name="acq_trigger_in[86]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[7]"/>
+        <port name="acq_data_in[86]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[7]"/>
+        <port name="acq_trigger_in[87]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[8]"/>
+        <port name="acq_data_in[87]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[8]"/>
+        <port name="acq_trigger_in[88]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[9]"/>
+        <port name="acq_data_in[88]" source="Decoder_IP_TX:u_Decoder_IP_TX|Out_HOST_MAC[9]"/>
+        <port name="acq_trigger_in[89]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[0]"/>
+        <port name="acq_data_in[89]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[0]"/>
+        <port name="acq_trigger_in[90]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[1]"/>
+        <port name="acq_data_in[90]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[1]"/>
+        <port name="acq_trigger_in[91]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[2]"/>
+        <port name="acq_data_in[91]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[2]"/>
+        <port name="acq_trigger_in[92]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[3]"/>
+        <port name="acq_data_in[92]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[3]"/>
+        <port name="acq_trigger_in[93]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[4]"/>
+        <port name="acq_data_in[93]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[4]"/>
+        <port name="acq_trigger_in[94]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[5]"/>
+        <port name="acq_data_in[94]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[5]"/>
+        <port name="acq_trigger_in[95]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[6]"/>
+        <port name="acq_data_in[95]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[6]"/>
+        <port name="acq_trigger_in[96]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[7]"/>
+        <port name="acq_data_in[96]" source="Decoder_IP_TX:u_Decoder_IP_TX|conta_byte[7]"/>
+        <port name="acq_trigger_in[97]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[0]"/>
+        <port name="acq_data_in[97]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[0]"/>
+        <port name="acq_trigger_in[98]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[1]"/>
+        <port name="acq_data_in[98]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[1]"/>
+        <port name="acq_trigger_in[99]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[2]"/>
+        <port name="acq_data_in[99]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[2]"/>
+        <port name="acq_trigger_in[100]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[3]"/>
+        <port name="acq_data_in[100]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[3]"/>
+        <port name="acq_trigger_in[101]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[4]"/>
+        <port name="acq_data_in[101]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[4]"/>
+        <port name="acq_trigger_in[102]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[5]"/>
+        <port name="acq_data_in[102]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[5]"/>
+        <port name="acq_trigger_in[103]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[6]"/>
+        <port name="acq_data_in[103]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[6]"/>
+        <port name="acq_trigger_in[104]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[7]"/>
+        <port name="acq_data_in[104]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Data_nios[7]"/>
+        <port name="acq_trigger_in[105]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_En_nios"/>
+        <port name="acq_data_in[105]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_En_nios"/>
+        <port name="acq_trigger_in[106]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Sync_nios"/>
+        <port name="acq_data_in[106]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|In_Sync_nios"/>
+        <port name="acq_trigger_in[107]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[0]"/>
+        <port name="acq_data_in[107]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[0]"/>
+        <port name="acq_trigger_in[108]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[10]"/>
+        <port name="acq_data_in[108]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[10]"/>
+        <port name="acq_trigger_in[109]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[11]"/>
+        <port name="acq_data_in[109]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[11]"/>
+        <port name="acq_trigger_in[110]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[12]"/>
+        <port name="acq_data_in[110]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[12]"/>
+        <port name="acq_trigger_in[111]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[13]"/>
+        <port name="acq_data_in[111]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[13]"/>
+        <port name="acq_trigger_in[112]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[14]"/>
+        <port name="acq_data_in[112]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[14]"/>
+        <port name="acq_trigger_in[113]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[15]"/>
+        <port name="acq_data_in[113]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[15]"/>
+        <port name="acq_trigger_in[114]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[16]"/>
+        <port name="acq_data_in[114]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[16]"/>
+        <port name="acq_trigger_in[115]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[17]"/>
+        <port name="acq_data_in[115]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[17]"/>
+        <port name="acq_trigger_in[116]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[18]"/>
+        <port name="acq_data_in[116]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[18]"/>
+        <port name="acq_trigger_in[117]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[19]"/>
+        <port name="acq_data_in[117]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[19]"/>
+        <port name="acq_trigger_in[118]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[1]"/>
+        <port name="acq_data_in[118]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[1]"/>
+        <port name="acq_trigger_in[119]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[2]"/>
+        <port name="acq_data_in[119]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[2]"/>
+        <port name="acq_trigger_in[120]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[3]"/>
+        <port name="acq_data_in[120]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[3]"/>
+        <port name="acq_trigger_in[121]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[4]"/>
+        <port name="acq_data_in[121]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[4]"/>
+        <port name="acq_trigger_in[122]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[5]"/>
+        <port name="acq_data_in[122]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[5]"/>
+        <port name="acq_trigger_in[123]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[6]"/>
+        <port name="acq_data_in[123]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[6]"/>
+        <port name="acq_trigger_in[124]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[7]"/>
+        <port name="acq_data_in[124]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[7]"/>
+        <port name="acq_trigger_in[125]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[8]"/>
+        <port name="acq_data_in[125]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[8]"/>
+        <port name="acq_trigger_in[126]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[9]"/>
+        <port name="acq_data_in[126]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_FRAQ[9]"/>
+        <port name="acq_trigger_in[127]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[0]"/>
+        <port name="acq_data_in[127]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[0]"/>
+        <port name="acq_trigger_in[128]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[1]"/>
+        <port name="acq_data_in[128]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[1]"/>
+        <port name="acq_trigger_in[129]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[2]"/>
+        <port name="acq_data_in[129]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[2]"/>
+        <port name="acq_trigger_in[130]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[3]"/>
+        <port name="acq_data_in[130]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[3]"/>
+        <port name="acq_trigger_in[131]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[4]"/>
+        <port name="acq_data_in[131]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[4]"/>
+        <port name="acq_trigger_in[132]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[5]"/>
+        <port name="acq_data_in[132]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[5]"/>
+        <port name="acq_trigger_in[133]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[6]"/>
+        <port name="acq_data_in[133]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[6]"/>
+        <port name="acq_trigger_in[134]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[7]"/>
+        <port name="acq_data_in[134]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[7]"/>
+        <port name="acq_trigger_in[135]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[8]"/>
+        <port name="acq_data_in[135]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[8]"/>
+        <port name="acq_trigger_in[136]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[9]"/>
+        <port name="acq_data_in[136]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_AQST_TIME_INT[9]"/>
+        <port name="acq_trigger_in[137]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[0]"/>
+        <port name="acq_data_in[137]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[0]"/>
+        <port name="acq_trigger_in[138]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[10]"/>
+        <port name="acq_data_in[138]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[10]"/>
+        <port name="acq_trigger_in[139]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[11]"/>
+        <port name="acq_data_in[139]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[11]"/>
+        <port name="acq_trigger_in[140]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[12]"/>
+        <port name="acq_data_in[140]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[12]"/>
+        <port name="acq_trigger_in[141]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[13]"/>
+        <port name="acq_data_in[141]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[13]"/>
+        <port name="acq_trigger_in[142]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[14]"/>
+        <port name="acq_data_in[142]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[14]"/>
+        <port name="acq_trigger_in[143]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[1]"/>
+        <port name="acq_data_in[143]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[1]"/>
+        <port name="acq_trigger_in[144]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[2]"/>
+        <port name="acq_data_in[144]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[2]"/>
+        <port name="acq_trigger_in[145]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[3]"/>
+        <port name="acq_data_in[145]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[3]"/>
+        <port name="acq_trigger_in[146]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[4]"/>
+        <port name="acq_data_in[146]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[4]"/>
+        <port name="acq_trigger_in[147]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[5]"/>
+        <port name="acq_data_in[147]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[5]"/>
+        <port name="acq_trigger_in[148]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[6]"/>
+        <port name="acq_data_in[148]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[6]"/>
+        <port name="acq_trigger_in[149]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[7]"/>
+        <port name="acq_data_in[149]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[7]"/>
+        <port name="acq_trigger_in[150]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[8]"/>
+        <port name="acq_data_in[150]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[8]"/>
+        <port name="acq_trigger_in[151]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[9]"/>
+        <port name="acq_data_in[151]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_IMG_COUNTER[9]"/>
+        <port name="acq_trigger_in[152]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[0]"/>
+        <port name="acq_data_in[152]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[0]"/>
+        <port name="acq_trigger_in[153]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[10]"/>
+        <port name="acq_data_in[153]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[10]"/>
+        <port name="acq_trigger_in[154]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[11]"/>
+        <port name="acq_data_in[154]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[11]"/>
+        <port name="acq_trigger_in[155]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[12]"/>
+        <port name="acq_data_in[155]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[12]"/>
+        <port name="acq_trigger_in[156]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[1]"/>
+        <port name="acq_data_in[156]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[1]"/>
+        <port name="acq_trigger_in[157]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[2]"/>
+        <port name="acq_data_in[157]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[2]"/>
+        <port name="acq_trigger_in[158]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[3]"/>
+        <port name="acq_data_in[158]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[3]"/>
+        <port name="acq_trigger_in[159]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[4]"/>
+        <port name="acq_data_in[159]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[4]"/>
+        <port name="acq_trigger_in[160]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[5]"/>
+        <port name="acq_data_in[160]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[5]"/>
+        <port name="acq_trigger_in[161]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[6]"/>
+        <port name="acq_data_in[161]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[6]"/>
+        <port name="acq_trigger_in[162]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[7]"/>
+        <port name="acq_data_in[162]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[7]"/>
+        <port name="acq_trigger_in[163]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[8]"/>
+        <port name="acq_data_in[163]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[8]"/>
+        <port name="acq_trigger_in[164]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[9]"/>
+        <port name="acq_data_in[164]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_NPULSES[9]"/>
+        <port name="acq_trigger_in[165]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[0]"/>
+        <port name="acq_data_in[165]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[0]"/>
+        <port name="acq_trigger_in[166]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[1]"/>
+        <port name="acq_data_in[166]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[1]"/>
+        <port name="acq_trigger_in[167]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[2]"/>
+        <port name="acq_data_in[167]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[2]"/>
+        <port name="acq_trigger_in[168]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[3]"/>
+        <port name="acq_data_in[168]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[3]"/>
+        <port name="acq_trigger_in[169]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[4]"/>
+        <port name="acq_data_in[169]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[4]"/>
+        <port name="acq_trigger_in[170]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[5]"/>
+        <port name="acq_data_in[170]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[5]"/>
+        <port name="acq_trigger_in[171]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[6]"/>
+        <port name="acq_data_in[171]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[6]"/>
+        <port name="acq_trigger_in[172]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[7]"/>
+        <port name="acq_data_in[172]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[7]"/>
+        <port name="acq_trigger_in[173]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[8]"/>
+        <port name="acq_data_in[173]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|Out_TP_PERIOD[8]"/>
+        <port name="acq_trigger_in[174]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[0]"/>
+        <port name="acq_data_in[174]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[0]"/>
+        <port name="acq_trigger_in[175]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[1]"/>
+        <port name="acq_data_in[175]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[1]"/>
+        <port name="acq_trigger_in[176]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[2]"/>
+        <port name="acq_data_in[176]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[2]"/>
+        <port name="acq_trigger_in[177]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[3]"/>
+        <port name="acq_data_in[177]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[3]"/>
+        <port name="acq_trigger_in[178]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[4]"/>
+        <port name="acq_data_in[178]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[4]"/>
+        <port name="acq_trigger_in[179]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[5]"/>
+        <port name="acq_data_in[179]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[5]"/>
+        <port name="acq_trigger_in[180]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[6]"/>
+        <port name="acq_data_in[180]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[6]"/>
+        <port name="acq_trigger_in[181]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[7]"/>
+        <port name="acq_data_in[181]" source="Medipix_Bridge:u_Medipix_Bridge|Decoder_Parametros:u_Decoder_Parametros|conta_byte[7]"/>
+        <port name="acq_clk" source="cpu_pll:u_cpu_pll|c2"/>
+      </inputs>
+      <outputs/>
+    </node>
+  </node_info>
+</sld_project_info>

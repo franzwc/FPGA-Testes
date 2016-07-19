@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="Clk_in_Mdpx" direction="Input" source="Assignments" diff_pair_node="Clk_in_Mdpx(n)" >
+		</pin>
+		<pin name="En_in_Mdpx" direction="Input" source="Assignments" diff_pair_node="En_in_Mdpx(n)" >
+		</pin>
+		<pin name="Data_in_Mdpx[0]" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[0](n)" >
+		</pin>
+		<pin name="Data_in_Mdpx[1]" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[1](n)" >
+		</pin>
+		<pin name="Data_in_Mdpx[2]" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[2](n)" >
+		</pin>
+		<pin name="Data_in_Mdpx[3]" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[3](n)" >
+		</pin>
+		<pin name="Data_in_Mdpx[4]" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[4](n)" >
+		</pin>
+		<pin name="Data_in_Mdpx[5]" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[5](n)" >
+		</pin>
+		<pin name="Data_in_Mdpx[6]" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[6](n)" >
+		</pin>
+		<pin name="Data_in_Mdpx[7]" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[7](n)" >
+		</pin>
+		<pin name="Clk_out_Mdpx" direction="Output" source="Assignments" diff_pair_node="Clk_out_Mdpx(n)" >
+		</pin>
+		<pin name="Cont_sel_out_Mdpx" direction="Output" source="Assignments" diff_pair_node="Cont_sel_out_Mdpx(n)" >
+		</pin>
+		<pin name="En_out_Mdpx" direction="Output" source="Assignments" diff_pair_node="En_out_Mdpx(n)" >
+		</pin>
+		<pin name="Reset_out_Mdpx" direction="Output" source="Assignments" diff_pair_node="Reset_out_Mdpx(n)" >
+		</pin>
+		<pin name="Shutter_out_Mdpx" direction="Output" source="Assignments" diff_pair_node="Shutter_out_Mdpx(n)" >
+		</pin>
+		<pin name="Clk_in_Mdpx(n)" direction="Input" source="Assignments" diff_pair_node="Clk_in_Mdpx" >
+		</pin>
+		<pin name="Reset_out_Mdpx(n)" direction="Output" source="Assignments" diff_pair_node="Reset_out_Mdpx" >
+		</pin>
+		<pin name="Shutter_out_Mdpx(n)" direction="Output" source="Assignments" diff_pair_node="Shutter_out_Mdpx" >
+		</pin>
+		<pin name="En_in_Mdpx(n)" direction="Input" source="Assignments" diff_pair_node="En_in_Mdpx" >
+		</pin>
+		<pin name="En_out_Mdpx(n)" direction="Output" source="Assignments" diff_pair_node="En_out_Mdpx" >
+		</pin>
+		<pin name="Clk_out_Mdpx(n)" direction="Output" source="Assignments" diff_pair_node="Clk_out_Mdpx" >
+		</pin>
+		<pin name="Cont_sel_out_Mdpx(n)" direction="Output" source="Assignments" diff_pair_node="Cont_sel_out_Mdpx" >
+		</pin>
+		<pin name="Data_out_Mdpx" direction="Output" source="Assignments" diff_pair_node="Data_out_Mdpx(n)" >
+		</pin>
+		<pin name="Data_in_Mdpx[0](n)" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[0]" >
+		</pin>
+		<pin name="Data_in_Mdpx[1](n)" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[1]" >
+		</pin>
+		<pin name="Data_in_Mdpx[2](n)" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[2]" >
+		</pin>
+		<pin name="Data_in_Mdpx[3](n)" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[3]" >
+		</pin>
+		<pin name="Data_in_Mdpx[4](n)" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[4]" >
+		</pin>
+		<pin name="Data_in_Mdpx[5](n)" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[5]" >
+		</pin>
+		<pin name="Data_in_Mdpx[6](n)" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[6]" >
+		</pin>
+		<pin name="Data_in_Mdpx[7](n)" direction="Input" source="Assignments" diff_pair_node="Data_in_Mdpx[7]" >
+		</pin>
+		<pin name="MtxClr_out_Mdpx" direction="Output" source="Assignments" diff_pair_node="MtxClr_out_Mdpx(n)" >
+		</pin>
+		<pin name="TPSWT_out_Mdpx" direction="Output" source="Assignments" diff_pair_node="TPSWT_out_Mdpx(n)" >
+		</pin>
+		<pin name="Data_out_Mdpx(n)" direction="Output" source="Assignments" diff_pair_node="Data_out_Mdpx" >
+		</pin>
+		<pin name="MtxClr_out_Mdpx(n)" direction="Output" source="Assignments" diff_pair_node="MtxClr_out_Mdpx" >
+		</pin>
+		<pin name="TPSWT_out_Mdpx(n)" direction="Output" source="Assignments" diff_pair_node="TPSWT_out_Mdpx" >
+		</pin>
+		<pin name="Data_out_Mdpx[6](n)" direction="Output" source="Report Database" diff_pair_node="Data_out_Mdpx[6]" >
+		</pin>
+		<pin name="Data_out_Mdpx[4](n)" direction="Output" source="Report Database" diff_pair_node="Data_out_Mdpx[4]" >
+		</pin>
+		<pin name="Data_out_Mdpx[5](n)" direction="Output" source="Report Database" diff_pair_node="Data_out_Mdpx[5]" >
+		</pin>
+		<pin name="Data_out_Mdpx[1](n)" direction="Output" source="Report Database" diff_pair_node="Data_out_Mdpx[1]" >
+		</pin>
+		<pin name="Data_out_Mdpx[3](n)" direction="Output" source="Report Database" diff_pair_node="Data_out_Mdpx[3]" >
+		</pin>
+		<pin name="Data_out_Mdpx[2](n)" direction="Output" source="Report Database" diff_pair_node="Data_out_Mdpx[2]" >
+		</pin>
+		<pin name="Data_out_Mdpx[0](n)" direction="Output" source="Report Database" diff_pair_node="Data_out_Mdpx[0]" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

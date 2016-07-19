@@ -1,0 +1,8 @@
+#Mon Dec 02 17:56:50 BRST 2013
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=
+resourcetypes=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<editors version\="3.1">\r\n<info extension\="html" name\="*">\r\n<editor id\="org.eclipse.ui.browser.editorSupport"/>\r\n</info>\r\n<info extension\="htm" name\="*">\r\n<editor id\="org.eclipse.ui.browser.editorSupport"/>\r\n</info>\r\n<info extension\="out" name\="gmon">\r\n<editor id\="com.altera.ide.gprof.GprofViewer"/>\r\n</info>\r\n<info extension\="shtml" name\="*">\r\n<editor id\="org.eclipse.ui.browser.editorSupport"/>\r\n</info>\r\n</editors>
+overridepresentation=true
+eclipse.preferences.version=1
+editors=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<editors>\r\n<descriptor id\="org.eclipse.ui.browser.editorSupport" image\="$nl$/icons/obj16/internal_browser.gif" internal\="false" label\="Web Browser" launcher\="org.eclipse.ui.internal.browser.BrowserLauncher" openMode\="4" open_in_place\="false" plugin\="org.eclipse.ui.browser"/>\r\n<descriptor class\="com.altera.ide.gprof.ui.RawOutput" id\="com.altera.ide.gprof.GprofViewer" image\="icons/trace_co.gif" internal\="true" label\="Gprof Viewer" openMode\="1" open_in_place\="false" plugin\="com.altera.ide.gprof"/>\r\n</editors>
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands/>
+ENABLED_DECORATORS=com.altera.nj.ui.NiosIIProjectDecorator\:true,org.eclipse.team.cvs.ui.decorator\:false,org.eclipse.ui.LinkedResourceDecorator\:true,

@@ -1,0 +1,251 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 10.0 Build 262 08/18/2010 Service Pack 1 SJ Full Version
+# Date created = 10:24:51  April 22, 2014
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		MedOIP_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE75F23C8
+set_global_assignment -name TOP_LEVEL_ENTITY Top_MedOIP
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "10.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:24:51  APRIL 22, 2014"
+set_global_assignment -name LAST_QUARTUS_VERSION "10.0 SP1"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -entity MedOIP -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity MedOIP -section_id "Root Region"
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name INCREMENTAL_COMPILATION OFF
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_B12 -to Clk25
+set_location_assignment PIN_A12 -to Clk125
+set_location_assignment PIN_H7 -to Eth_Mdc
+set_location_assignment PIN_D10 -to Eth_Mdio
+set_location_assignment PIN_G5 -to Eth_Rst_N
+set_location_assignment PIN_B6 -to Eth_RxCtl
+set_location_assignment PIN_B11 -to Eth_Rxc
+set_location_assignment PIN_C3 -to Eth_Rxd[0]
+set_location_assignment PIN_C7 -to Eth_Rxd[1]
+set_location_assignment PIN_E7 -to Eth_Rxd[2]
+set_location_assignment PIN_F9 -to Eth_Rxd[3]
+set_location_assignment PIN_E6 -to Eth_TxCtl
+set_location_assignment PIN_E5 -to Eth_Txc
+set_location_assignment PIN_A6 -to Eth_Txd[0]
+set_location_assignment PIN_D7 -to Eth_Txd[1]
+set_location_assignment PIN_A10 -to Eth_Txd[2]
+set_location_assignment PIN_C4 -to Eth_Txd[3]
+set_location_assignment PIN_K2 -to Flash_Cclk
+set_location_assignment PIN_E2 -to Flash_Cs_N
+set_location_assignment PIN_D1 -to Flash_Di
+set_location_assignment PIN_K1 -to Flash_Do
+set_location_assignment PIN_J2 -to Led_N[2]
+set_location_assignment PIN_B2 -to Led_N[1]
+set_location_assignment PIN_B1 -to Led_N[0]
+set_global_assignment -name MISC_FILE "C:/Users/franz.couto/Desktop/Prototipo_Medipix/Projeto/MedOIP/MedipixOIP/MedOIP.dpf"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS128
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_ENDPOINT "NEAR END"
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "Top_pll:u_Top_pll|c0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name VERILOG_FILE modulos/ts_packet_gen.v
+set_global_assignment -name VERILOG_FILE modulos/m_MedOIp/VHD/TOP_TSoIP.v
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/IP/IPRamHeadermac.vhd
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/IP/IpFifoTsOIp.vhd
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/VHD/PhyInterface.vhd
+set_global_assignment -name VERILOG_FILE modulos/m_MedOIp/VHD/auk_udpipmac_ethernet_crc.v
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/VHD/teste_crc.vhd
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/VHD/mux_crc.vhd
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/VHD/MuxHdPactAddCRC.vhd
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/VHD/CtrlRdTxTsOIp.vhd
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/VHD/mac_header.vhd
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/VHD/CtrlWrTxTsOIP.vhd
+set_global_assignment -name QIP_FILE modulos/Top_pll.qip
+set_global_assignment -name VERILOG_FILE Top_MedOIP.v
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/VHD/pkt_length.vhd
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/VHD/ReaderTableConfigIP.vhd
+set_global_assignment -name VHDL_FILE modulos/m_MedOIp/VHD/PCK_CRC32_D4.vhd
+set_global_assignment -name VERILOG_FILE modulos/m_MedOIp/VHD/myblkinv2.v
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name VHDL_FILE modulos/reset.vhd
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to Eth_TxCtl -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to Eth_Txd[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to Eth_Txd[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to Eth_Txd[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to Eth_Txd[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to Eth_TxCtl -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to Eth_Txd[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to Eth_Txd[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to Eth_Txd[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to Eth_Txd[3] -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=2048" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=2048" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_BtsComp" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_HeaderReady" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Valid" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to "reset:u_reset|o_reset" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_BtsComp" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|i_IPDest[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Add[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_HeaderReady" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "TOP_TSoIP:u_TOP_TSoIP|mac_header:u_mac_header|o_Valid" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "reset:u_reset|o_reset" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=55" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=55" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=190" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=18728" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=18295" -section_id auto_signaltap_0

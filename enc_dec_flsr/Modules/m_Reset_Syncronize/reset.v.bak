@@ -1,0 +1,24 @@
+
+module Rst(
+  input         In_Clk,
+  output reg    Out_rst
+  );
+
+integer cont;
+
+always @ (posedge In_Clk)
+begin
+
+    cont:=cont+1;
+
+    if cont>= 50
+    begin    
+    Out_rst   <= '1';
+    end
+	 else
+	 begin
+	 Out_rst   <= '0';
+	 end
+	 
+end
+endmodule
